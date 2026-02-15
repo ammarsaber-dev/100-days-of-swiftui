@@ -1,1 +1,6 @@
-{}
+{
+  "useMarkdownLinks": true,
+  "newFileLocation": "root",
+  "attachmentFolderPath": "_attachments",
+  "showUnsupportedFiles": false
+}

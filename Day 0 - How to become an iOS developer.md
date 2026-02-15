@@ -1,6 +1,5 @@
-**Course:** 100 Days of SwiftUI
-**Date:** February 14, 2026
-**Status:** Notes completed
+**Date: February 14, 2026**
+
 
 > **Quick Summary:** A complete roadmap for becoming an iOS developer, covering the essential skills you actually need to get hired (spoiler: it's only 5 core skills), common mistakes that slow people down, the best free resources to learn from, and how to connect with the community. No fluff, no gatekeeping—just a practical path from zero to job-ready.
 

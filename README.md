@@ -1,5 +1,5 @@
 # 100 Days of SwiftUI
-My notes for 100 Days of SwiftUI course.
+My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 
 # Days Notes
 - [Day 0 - How to become an iOS developer](Day%200%20-%20How%20to%20become%20an%20iOS%20developer.md)
