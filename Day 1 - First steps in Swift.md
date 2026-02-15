@@ -1,5 +1,9 @@
 **Date: February 15, 2026**
 
+> **Quick Summary:** Your first day of Swift covers the absolute fundamentals—variables, constants, strings, integers, and doubles. These are the building blocks of every app you'll ever write. By the end of today, you'll understand how Swift stores and manipulates data, which is essential for everything that comes next.
+
+---
+
 ## Quick Reference
 
 ```swift
@@ -40,7 +44,8 @@ let c = Double(a) + b       // must convert explicitly
 ```
 
 ---
-## Course Overview
+
+## Today's Mission
 
 SwiftUI is a powerful framework for building interactive apps across Apple platforms, and it's powered by the Swift programming language. To build SwiftUI apps, you need to understand Swift itself.
 
@@ -58,18 +63,22 @@ It may be tempting to move ahead to more videos and tests, but don't rush—stud
 4. How to create variables and constants
     - Optional: Why does Swift have variables?
     - Optional: Why does Swift have constants as well as variables?
+    - Test: Variables
+    - Test: Constants
 5. How to create strings
     - Optional: Why does Swift need multi-line strings?
+    - Test: Multi-line strings
 6. How to store whole numbers
+    - Test: Strings and integers
 7. How to store decimal numbers
     - Optional: Why does Swift need both Doubles and Integers?
     - Optional: Why is Swift a type-safe language?
 
 ---
 
-## Introduction
+## 1. Introduction
 
-### Why Swift?
+### 1.1 Why Swift?
 
 Swift (launched in 2014) is a modern, powerful language designed to be safe, clear, and efficient. It avoids the complexity of older languages, reduces unsafe code, improves readability, and supports global languages.
 
@@ -77,7 +86,7 @@ Swift itself doesn't build user interfaces — that's where SwiftUI comes in. Sw
 
 Swift is clean, safe, practical, and profitable — a strong choice for app development.
 
-### About this course
+### 1.2 About This Course
 
 I've been teaching Swift since its 2014 launch, and Hacking with Swift is now the world's largest site dedicated to Swift. Over the years, I've learned which topics matter most, how to structure them clearly, and how to help learners retain what they study—this course reflects that experience.
 
@@ -87,7 +96,7 @@ Each chapter is available in both text and video, covering the same material. Th
 
 Programming is an art—don't spend all your time sharpening your pencil when you should be drawing.
 
-### How to follow along
+### 1.3 How to Follow Along
 
 This book includes lots of code, and I strongly encourage you to type it yourself—run it, review the output, and experiment to deepen your understanding.
 
@@ -100,9 +109,12 @@ You can use one playground for the whole book or create a new one per chapter—
 **Tip:** The first run may take a few seconds to start; after that, it runs quickly.
 
 ---
-## How to create variables and constants
 
-Swift uses **variables** (`var`) and **constants** (`let`) to store data.
+## 2. How to Create Variables and Constants
+
+Swift uses **variables** (`var`) and **constants** (`let`) to store data. This is fundamental—every app you build will use both.
+
+### Understanding Variables
 
 **Variables** can change:
 
@@ -112,6 +124,10 @@ name = "Rebecca"
 name = "Keeley"
 ```
 
+Variables hold temporary information that needs to be updated. Your app takes data—user input, downloaded content, device info—transforms it, and shows it to the user. Variables handle that transformation.
+
+### Understanding Constants
+
 **Constants** cannot change:
 
 ```swift
@@ -119,7 +135,11 @@ let character = "Daphne"
 // character = "Eloise" → error
 ```
 
-`let` comes from math: "let x equal 5." Delete lines trying to change constants.
+Constants are like making a contract with Swift: "this value matters, don't let it change." Once set, the value is locked in. This prevents accidental changes and helps avoid bugs.
+
+`let` comes from math: "let x equal 5."
+
+### Printing Values
 
 **Printing values** helps you see what's inside your variables:
 
@@ -134,7 +154,9 @@ print(playerName)
 
 Run code in Xcode with the blue play button; you can run up to any line by moving the play icon.
 
-**Naming conventions**: Swift uses **camelCase**. Be consistent—`playerName` ≠ `playername`:
+### Naming Conventions
+
+Swift uses **camelCase**. Be consistent—`playerName` ≠ `playername`:
 
 ```swift
 let managerName = "Michael Scott"
@@ -164,11 +186,9 @@ let playername = "Roy"
 print(playerName)     // Error: playerName not found (case matters!)
 ```
 
-### Key Takeaway
+**Key Takeaway:** Use `let` for values that won't change, `var` for values that will. Swift encourages constants for safety and optimization. Always use camelCase for naming.
 
-Use `let` for values that won't change, `var` for values that will. Swift encourages constants for safety and optimization. Always use camelCase for naming.
-
-### Optional: Why does Swift have variables?
+### Optional: Why Does Swift Have Variables?
 
 Variables store temporary information and are central to almost every Swift program. Your app will take some data—user input, downloaded content, or device info—transform it, and show it to the user. The transformation is where your app's "magic" happens, but storing data in memory is what `var` handles.
 
@@ -187,7 +207,7 @@ Using `var` repeatedly for the same name will cause an error. Swift enforces c
 
 Although variables are fundamental, sometimes it's better to avoid them—more on that later.
 
-### Optional: Why does Swift have constants as well as variables?
+### Optional: Why Does Swift Have Constants as Well as Variables?
 
 Constants are like variables, but their value **cannot change once set**. Use `let` to create a constant:
 
@@ -200,7 +220,8 @@ Swift encourages constants whenever a value doesn't need to change. Unlike varia
 Using a constant is like making a contract with Swift: "this value matters, don't let it change."
 
 ---
-## How to create strings
+
+## 3. How to Create Strings
 
 Swift uses **strings** to store text. Strings go inside **double quotes**:
 
@@ -210,11 +231,17 @@ let filename = "paris.jpg"
 let result = "You win!"
 ```
 
+Strings are everywhere in apps—user names, button labels, error messages, downloaded text. Understanding strings is essential.
+
+### Escaping Quotes
+
 You can include quotation marks inside a string by escaping them with a backslash (`\`):
 
 ```swift
 let quote = "Then he tapped a sign saying \"Believe\" and walked away."
 ```
+
+### Multi-line Strings
 
 **Multi-line strings** use triple quotes:
 
@@ -226,7 +253,11 @@ Apple engineer
 """
 ```
 
-The opening and closing `"""` must be on their own lines.
+The opening and closing `"""` must be on their own lines. Swift preserves the line breaks as part of the string.
+
+Multi-line strings keep your code readable when dealing with longer text—emails, descriptions, articles, or any text that naturally spans multiple lines.
+
+### String Methods
 
 **Counting characters** uses `.count`:
 
@@ -258,8 +289,6 @@ Strings are **case-sensitive**:
 filename.hasSuffix(".JPG") // false
 ```
 
-Strings are powerful in Swift, and these are the basics you'll use most often.
-
 ### Common Mistakes
 
 ```swift
@@ -284,11 +313,9 @@ let filename = "Paris.JPG"
 filename.hasSuffix(".jpg")  // Returns false (case matters!)
 ```
 
-### Key Takeaway
+**Key Takeaway:** Strings use double quotes. Escape internal quotes with `\`. Multi-line strings use `"""` on their own lines. Use `.count` to read length, methods with `()` to modify. Strings are case-sensitive.
 
-Strings use double quotes. Escape internal quotes with `\`. Multi-line strings use `"""` on their own lines. Use `.count` to read length, methods with `()` to modify. Strings are case-sensitive.
-
-### Optional: Why does Swift need multi-line strings?
+### Optional: Why Does Swift Need Multi-line Strings?
 
 Standard strings can't contain line breaks, making long text ugly in code:
 
@@ -311,9 +338,14 @@ Swift preserves the line breaks as part of the string.
 **Note:** Sometimes you need a _long_ string but want it on a _single line_ in your code (not multi-line). This is rare, but useful for error messages—if someone sees an error and searches your code for it, a multi-line string would break their search.
 
 ---
-## How to store whole numbers
+
+## 4. How to Store Whole Numbers
 
 When you're working with whole numbers like 3, 5, 50, or 5 million, you're working with integers, or `Int` for short.
+
+Integers are everywhere in programming: scores, ages, counts, indices, IDs. You'll use them constantly.
+
+### Creating Integers
 
 Create integers like strings—use `let` or `var`, provide a name, then give it a value:
 
@@ -323,7 +355,9 @@ let score = 10
 
 Integers can be really big (past quintillions) and really small (negative numbers down to quintillions).
 
-**Making Numbers Readable** Use underscores `_` to break up numbers however you want:
+### Making Numbers Readable
+
+Use underscores `_` to break up numbers however you want:
 
 ```swift
 let reallyBig = 100_000_000
@@ -335,7 +369,11 @@ Swift doesn't care about the underscores—this also works:
 let reallyBig = 1_00__00___00____00
 ```
 
-**Arithmetic Operators** Create integers from other integers using `+`, `-`, `*`, and `/`:
+The underscores are purely for you, the programmer, to make large numbers easier to read.
+
+### Arithmetic Operators
+
+Create integers from other integers using `+`, `-`, `*`, and `/`:
 
 ```swift
 let lowerScore = score - 2
@@ -344,7 +382,9 @@ let doubledScore = score * 2
 let halvedScore = score / 2
 ```
 
-**Compound Assignment Operators** Instead of `counter = counter + 5`, use shorthand `+=`:
+### Compound Assignment Operators
+
+Instead of `counter = counter + 5`, use shorthand `+=`:
 
 ```swift
 var counter = 10
@@ -354,7 +394,11 @@ counter -= 10  // subtract and assign
 counter /= 2   // divide and assign
 ```
 
-**Useful Functionality** Integers have helpful methods like `isMultiple(of:)`:
+These shortcuts are faster to write and easier to read once you're familiar with them.
+
+### Useful Methods
+
+Integers have helpful methods like `isMultiple(of:)`:
 
 ```swift
 let number = 120
@@ -384,14 +428,15 @@ let number = _100_000  // Error: invalid syntax
 let number = 100_000
 ```
 
-### Key Takeaway
-
-Use `Int` for whole numbers. Underscores make large numbers readable. Use `+`, `-`, `*`, `/` for arithmetic. Use `+=`, `-=`, `*=`, `/=` as shortcuts. Integer division truncates decimals.
+**Key Takeaway:** Use `Int` for whole numbers. Underscores make large numbers readable. Use `+`, `-`, `*`, `/` for arithmetic. Use `+=`, `-=`, `*=`, `/=` as shortcuts. Integer division truncates decimals.
 
 ---
-## How to Store Decimal Numbers
+
+## 5. How to Store Decimal Numbers
 
 Decimal numbers like 3.1, 5.56, or 3.141592654 are floating-point numbers. The name comes from how computers store them: moving the decimal point around to fit very large and very small numbers in the same space.
+
+### Why Decimals Are Tricky
 
 This causes decimals to be notoriously problematic:
 
@@ -400,9 +445,15 @@ let number = 0.1 + 0.2
 print(number)  // prints 0.30000000000000004, not 0.3
 ```
 
-**Creating Decimals** Swift calls them `Double` (double-precision floating-point number). Can store absolutely massive numbers.
+Welcome to the strange world of floating-point arithmetic. Computers can't store some decimal numbers exactly, so they use very close approximations. This is true in every programming language, not just Swift.
 
-**Type Safety** Decimals are wholly different from integers—you can't mix them. Integers are 100% accurate, decimals aren't:
+### Creating Decimals
+
+Swift calls them `Double` (double-precision floating-point number). They can store absolutely massive numbers.
+
+### Type Safety: Why You Can't Mix Int and Double
+
+Decimals are wholly different from integers—you can't mix them. Integers are 100% accurate, decimals aren't:
 
 ```swift
 let a = 1
@@ -417,7 +468,11 @@ let c = a + Int(b)      // Double → Int
 let c = Double(a) + b   // Int → Double
 ```
 
-**How Swift Decides** Dot = `Double`. No dot = `Int`:
+This seems annoying at first, but it prevents bugs. Swift is protecting you from accidentally losing precision.
+
+### How Swift Decides Types
+
+Dot = `Double`. No dot = `Int`:
 
 ```swift
 let double3 = 3.0  // Double
@@ -432,16 +487,24 @@ name = "John Travolta"  // works
 name = 57               // Error!
 ```
 
-**Operators** Same as integers:
+This is **type safety** in action. Swift determines the type based on the initial value, then locks it in. You can change the value, but never the type.
+
+### Operators
+
+Same as integers:
 
 ```swift
 var rating = 5.0
 rating *= 2
 ```
 
-**CGFloat** Older APIs use `CGFloat`. Swift lets you use `Double` everywhere, so ignore `CGFloat`.
+### CGFloat
 
-**Why Complex?** Computers use binary—can't store numbers like 1/3 exactly, so creates close approximations. That's why Swift won't let us mix `Int` and `Double` by accident!
+Older APIs use `CGFloat`. Swift lets you use `Double` everywhere, so ignore `CGFloat`.
+
+### Why Floating-Point Is Complex
+
+Computers use binary—they can't store numbers like 1/3 exactly, so they create very close approximations. It's extremely efficient, and the error is usually irrelevant, but that's why Swift won't let us mix `Int` and `Double` by accident!
 
 ### Common Mistakes
 
@@ -473,11 +536,9 @@ let half = 1 / 2  // result is 0 (integer division!)
 let half = 1.0 / 2.0  // result is 0.5
 ```
 
-### Key Takeaway
+**Key Takeaway:** Use `Double` for decimal numbers. Can't mix `Int` and `Double` without explicit conversion. Swift determines type by presence of decimal point. Floating-point arithmetic isn't perfectly precise. Once a variable's type is set, it can't change.
 
-Use `Double` for decimal numbers. Can't mix `Int` and `Double` without explicit conversion. Swift determines type by presence of decimal point. Floating-point arithmetic isn't perfectly precise. Once a variable's type is set, it can't change.
-
-### Optional: Why does Swift need both Doubles and Integers?
+### Optional: Why Does Swift Need Both Doubles and Integers?
 
 Swift has different number types designed to solve different problems. They can't be mixed because it will lead to problems.
 
@@ -497,7 +558,7 @@ var myDouble = 1.0  // double
 
 Swift is playing it safe: your double is a variable—it could change to 1.1 or 3.5. Swift can't guarantee you won't lose the 0.1 or 0.5, so it doesn't allow mixing them. This will annoy you at first, but it's helpful.
 
-### Optional: Why is Swift a Type-Safe Language?
+### Optional: Why Is Swift a Type-Safe Language?
 
 When you create a variable, Swift figures out its type based on the data you assign, and that variable will always keep that type:
 
@@ -515,7 +576,9 @@ meaningOfLife = "Forty two"  // Error! Can't change integer to string
 
 ---
 
-## Day 1 Summary
+## 6. Summary: Simple Data
+
+We've covered a lot today. Here's everything in one place:
 
 **Variables and Constants**
 
@@ -557,3 +620,19 @@ meaningOfLife = "Forty two"  // Error! Can't change integer to string
 - Must explicitly convert between Int and Double
 
 **Key Principle:** Once Swift decides a variable's type, that type is locked in. This prevents bugs and helps Swift optimize your code.
+
+---
+
+## Where Now?
+
+You've completed Day 1. You now understand how Swift stores data—the foundation of everything you'll build.
+
+These concepts might seem simple, but they're critical. Variables, constants, strings, integers, and doubles appear in literally every Swift program. Mastering them now means everything else will be easier.
+
+**Tomorrow:** You'll learn about Booleans (true/false values) and string interpolation (combining values into strings). Plus your first checkpoint where you'll write code from scratch.
+
+Don't rush. Take your time to understand these fundamentals. The course gets more complex, and a solid foundation now will pay off later.
+
+---
+
+**Previous:** [Day 0 - How to Become an iOS Developer](Day%200%20-%20How%20to%20become%20an%20iOS%20developer.md) | **Next:** [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md)
