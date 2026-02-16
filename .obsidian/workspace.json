@@ -35,8 +35,7 @@
               "title": "Day 5 - Conditions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 285.5
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -198,10 +197,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "23f26503087895dc",
+  "active": "df481c02f2a86693",
   "lastOpenFiles": [
-    "Day 4 - Complex data types, part 2.md",
     "Day 5 - Conditions.md",
+    "Day 4 - Complex data types, part 2.md",
     "README.md",
     "Day 2 - Simple data types, part 2.md",
     "Day 3 - Complex data types, part 1.md",
