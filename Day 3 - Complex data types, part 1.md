@@ -1,4 +1,4 @@
-**February 15, 2026** • [Day 2](/) ← → [Day 4](/)
+**February 15, 2026** • [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md) ← → [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md)
 
 Learn about arrays, dictionaries, sets, and enums—ways to group multiple pieces of data together.
 
@@ -38,7 +38,7 @@ day = .tuesday                  // shorthand after first use
 
 ## Arrays
 
-Arrays group multiple values of the same type in order. They hold zero to millions of items and automatically adapt to size.
+Arrays group multiple values of the same type in order. They hold zero to millions of items and automatically adapt to size. You'll use them constantly—they're the most common collection type.
 
 ### Creating and Reading Arrays
 
@@ -55,6 +55,8 @@ print(beatles[0])      // "John" (first item)
 print(numbers[1])      // 8 (second item)
 print(temperatures[2]) // 26.4 (third item)
 ```
+
+This is called **zero-based indexing**—the first item is at position 0, not 1.
 
 ### Type Safety
 
@@ -123,21 +125,13 @@ var scores = [100, 90, 85]
 scores.append(95)
 ```
 
-**Key Insights:**
-
-- Arrays store ordered collections of the same type
-- Index starts at 0 (zero-based indexing)
-- Accessing invalid index crashes your app—better than silently returning wrong data
-- Use `var` for arrays you need to modify
-- Arrays can hold any number of items and grow/shrink automatically (if `var`)
-- Use arrays when order matters or duplicates are needed (most common use case)
-- Methods: `append()`, `remove(at:)`, `removeAll()`, `contains()`, `sorted()`, `reversed()`, `count`
+Accessing an invalid index crashes your app—better than silently returning wrong data. Arrays can grow/shrink automatically if they're declared with `var`.
 
 ---
 
 ## Dictionaries
 
-Arrays access data by position, which can be dangerous. Dictionaries store data using meaningful keys instead.
+Arrays access data by position, which can be dangerous. Dictionaries store data using meaningful keys instead—more convenient and safer.
 
 ### The Problem with Arrays
 
@@ -166,7 +160,7 @@ print(employee2["job"])
 print(employee2["location"])
 ```
 
-Keys are on the left, values on the right. Much clearer than array indices.
+Keys are on the left, values on the right. Much clearer than array indices like `employee[0]`.
 
 ### Optionals and Default Values
 
@@ -176,7 +170,7 @@ Reading a non-existent key returns an **optional** (might be nil):
 print(employee2["password"])  // key doesn't exist, returns nil
 ```
 
-Swift doesn't crash like arrays—it returns an optional. Provide a default value:
+Swift doesn't crash like arrays—it returns an optional. Provide a default value to avoid dealing with optionals:
 
 ```swift
 print(employee2["name", default: "Unknown"])
@@ -238,26 +232,15 @@ var data = [:]  // Error
 var data = [String: Int]()
 ```
 
-**Key Insights:**
+Dictionaries optimize for fast retrieval—instant lookup even with 100,000 items. Use them when you need to look up data by meaningful identifiers (`user["country"]`) rather than remembering numeric positions.
 
-- Dictionaries store data with meaningful keys instead of numeric indices
-- Reading non-existent keys returns optionals (nil), not crashes
-- Use `default:` for fallback values when key might not exist
-- Keys must be unique—setting existing key overwrites the value
-- Dictionaries optimize for fast retrieval—instant lookup even with 100,000 items
-- More convenient than arrays when you need meaningful access (`user["country"]` vs remembering "index 7")
-- Use dictionaries when you need to look up data by meaningful identifiers
-
-**When to use default values:**
-
-- Missing value = failure/zero → use default (always get a value)
-- Missing value = hasn't happened yet → don't use default (check for nil)
+**When to use default values:** If missing value = failure/zero, use default (always get a value). If missing value = hasn't happened yet, don't use default (check for nil).
 
 ---
 
 ## Sets
 
-Sets are like arrays but don't allow duplicates and don't store items in order.
+Sets are like arrays but don't allow duplicates and don't store items in order. They're perfect for "does this exist?" questions and automatic uniqueness.
 
 ### Creating Sets
 
@@ -289,10 +272,7 @@ let actors = Set(["Denzel Washington", "Tom Cruise", /* ...998 more */ ])
 print(actors.contains("Tom Cruise"))  // Returns instantly
 ```
 
-- Array of 1,000: might check all 1,000 items
-- Set of 1,000,000: returns instantly
-
-Even with 10 million items, `contains()` on sets runs instantly.
+With an array of 1,000 items, Swift might check all 1,000. With a set of 1,000,000 items, it returns instantly. Even with 10 million items, `contains()` on sets runs instantly.
 
 ### Useful Set Methods
 
@@ -321,22 +301,13 @@ let set = Set(["A", "B", "C"])
 print(set[0])  // Error: sets don't have indices
 ```
 
-**Key Insights:**
-
-- Sets store unique, unordered items
-- Extremely fast lookups—instant even with millions of items
-- Use `insert()` to add items (not `append()`)
-- Automatically remove duplicates when created
-- Perfect for "does this exist?" questions or when duplicates aren't allowed
-- No index access—items are unordered
-- Use arrays when order matters or duplicates are needed
-- Use sets when you need fast existence checks or automatic uniqueness
+Use sets when you need fast existence checks or automatic uniqueness. Use arrays when order matters or duplicates are needed (most cases).
 
 ---
 
 ## Enums
 
-An **enum** (enumeration) is a set of named values you define. More efficient and safer than strings.
+An **enum** (enumeration) is a set of named values you define. More efficient and safer than strings—prevents typos and invalid data.
 
 ### The Problem with Strings
 
@@ -356,7 +327,7 @@ enum Weekday {
 }
 ```
 
-Only these five values allowed—no typos, no accidents.
+Only these five values allowed—no typos, no accidents. Swift won't let you use invalid values.
 
 ### Using Enums
 
@@ -365,7 +336,7 @@ var day = Weekday.monday
 day = Weekday.tuesday
 ```
 
-Swift won't let you use invalid values. When you type `Weekday.`, Swift shows all available options.
+When you type `Weekday.`, Swift shows all available options.
 
 ### Enum Shortcuts
 
@@ -398,16 +369,7 @@ var heading = Direction.north
 heading = Weekday.monday  // Error: can't mix enum types
 ```
 
-**Key Insights:**
-
-- Enums define a specific set of valid values for a type
-- Prevent typos and invalid data—Swift enforces only defined cases
-- More efficient than strings (stored as integers internally)
-- Use shorthand notation after first assignment (`.monday` instead of `Weekday.monday`)
-- Type-safe: can't mix different enum types or use strings
-- Give meaningful names to values (clearer than magic numbers like `1`, `2`, `3`)
-- More powerful in Swift than in many other languages
-- Use enums when you have a known, fixed set of related values
+Enums give meaningful names to values (clearer than magic numbers like `1`, `2`, `3`) and are type-safe—Swift enforces only defined cases. Use enums when you have a known, fixed set of related values.
 
 ---
 
@@ -415,7 +377,7 @@ heading = Weekday.monday  // Error: can't mix enum types
 
 - **Arrays**: Need order and allow duplicates → Most common use case
 - **Dictionaries**: Need meaningful keys for lookup → Second most common
-- **Sets**: Need fast lookups and guaranteed uniqueness → Less common but powerful when needed
+- **Sets**: Need fast lookups and guaranteed uniqueness → Less common but powerful
 - **Enums**: Need specific, fixed set of named values → For type-safe constants
 
 **Usage frequency:** Arrays (most) → Dictionaries → Sets → Enums

@@ -1,4 +1,4 @@
-**February 17, 2026** • [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md) ← → [Day 6 - Loops](Day%206%20-%20Loops.md)
+**February 15, 2026** • [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md) ← → [Day 6 - Loops](Day%206%20-%20Loops.md)
 
 Learn how to make decisions in code: `if`, `else`, `switch`, and the ternary operator.
 
@@ -57,10 +57,10 @@ All return `Bool` (true or false):
 - `<` less than
 - `>=` greater than or equal
 - `<=` less than or equal
-- `==` equal to
+- `==` equal to (not `=`, which is assignment)
 - `!=` not equal to
 
-Works with numbers, strings (alphabetical), and many other types.
+Works with numbers, strings (alphabetical), and many other types. Swift can compare many types out of the box: numbers, strings, dates, and even enums.
 
 ```swift
 let speed = 88
@@ -99,6 +99,8 @@ if username == "" {
 }
 ```
 
+Use `.isEmpty` instead of `count == 0` for strings—it's much faster because Swift doesn't need to count every character. This is especially important for long strings or complex Unicode characters.
+
 ### Working with Arrays
 
 ```swift
@@ -128,13 +130,6 @@ if age == "18" { }  // Error: can't compare Int to String
 if age == 18 { }
 ```
 
-**Key Insights:**
-
-- Use `isEmpty` instead of `count == 0` for strings—much faster because Swift doesn't need to count every character (important for long strings or complex Unicode)
-- Swift can compare many types: numbers, strings (alphabetical order), dates, enums
-- `==` compares values, `=` assigns values
-- Types must match when comparing (can't compare Int to String)
-
 ---
 
 ## if/else Chains
@@ -146,6 +141,21 @@ if age >= 18 {
     print("You can vote")
 } else {
     print("Too young to vote")
+}
+```
+
+Using `else` is more efficient than two separate `if` statements—Swift only checks the condition once, and the logic is clearer since the paths are mutually exclusive.
+
+```swift
+// ❌ Less efficient: checks condition twice
+if age >= 18 { print("Adult") }
+if age < 18 { print("Minor") }
+
+// ✅ Better: checks once
+if age >= 18 {
+    print("Adult")
+} else {
+    print("Minor")
 }
 ```
 
@@ -166,21 +176,6 @@ if score >= 90 {
 ```
 
 You can have multiple `else if` blocks, but only one `if` and one `else`.
-
-### Why Use else Instead of Separate if Statements?
-
-```swift
-// ❌ Less efficient: checks condition twice
-if age >= 18 { print("Adult") }
-if age < 18 { print("Minor") }
-
-// ✅ Better: checks once
-if age >= 18 {
-    print("Adult")
-} else {
-    print("Minor")
-}
-```
 
 ### Combining Conditions
 
@@ -204,6 +199,8 @@ if (isOwner && isEditingEnabled) || isAdmin {
 }
 ```
 
+Always use parentheses when mixing `&&` and `||` to avoid ambiguity. Swift evaluates `&&` before `||`, but explicit parentheses make your intent clear.
+
 ### Working with Enums
 
 ```swift
@@ -224,19 +221,13 @@ if transport == .airplane || transport == .helicopter {
 }
 ```
 
-**Key Insights:**
-
-- `else if` is more efficient than separate `if` statements—Swift only checks the condition once
-- Use `else` for mutually exclusive conditions (clearer logic)
-- Use `&&` when both conditions must be true, `||` when either can be true
-- Always use parentheses when mixing `&&` and `||` to avoid ambiguity (Swift evaluates `&&` before `||`)
-- With enums: first assignment needs full name (`TransportOption.airplane`), then use shorthand (`.airplane`)
+With enums, the first assignment needs the full name (`TransportOption.airplane`), then you can use shorthand (`.airplane`).
 
 ---
 
 ## Switch Statements
 
-Better than long `if/else` chains when checking one value against multiple possibilities.
+Switch is better than long `if/else` chains when checking one value against multiple possibilities. It's more readable, more performant (reads the value once), and Swift ensures you handle all cases.
 
 ```swift
 enum Weather {
@@ -260,6 +251,8 @@ case .unknown:
 ```
 
 ### Must Be Exhaustive
+
+Switch must handle every possible case, or use `default` for everything else:
 
 ```swift
 // ❌ Error: missing cases
@@ -325,16 +318,9 @@ default:
 }
 ```
 
-`fallthrough` makes Swift continue to the next case. Very rarely used in practice.
+`fallthrough` makes Swift continue to the next case. Very rarely used in practice—switch normally only executes the first matching case.
 
-**Key Insights:**
-
-- Switch is better than long `if/else if` chains—more readable and performant
-- Must be exhaustive: handle all cases or use `default`
-- `default` must come last
-- Switch only executes first matching case (use `fallthrough` to continue, but it's rare)
-- Benefits: don't repeat variable name, Swift verifies exhaustiveness (catches missing cases), reads value once
-- When to use: checking same value 3+ times, working with enums, need better readability
+**When to use switch:** Checking the same value 3+ times, working with enums (Swift verifies exhaustiveness), or when you need better readability than long `if/else if` chains.
 
 ---
 
@@ -342,7 +328,7 @@ default:
 
 Format: `condition ? valueIfTrue : valueIfFalse`
 
-Also called "conditional operator" or "ternary conditional operator" (works with three values).
+Also called "conditional operator" or "ternary conditional operator" (works with three values). Remember **WTF**: **W**hat condition, **T**rue value, **F**alse value.
 
 ```swift
 let age = 18
@@ -382,11 +368,7 @@ print(
 print(hour < 12 ? "Morning" : "Afternoon")
 ```
 
-### Remember WTF
-
-- **W**hat: the condition to check
-- **T**rue: value if condition is true
-- **F**alse: value if condition is false
+Ternary is required in SwiftUI and other declarative contexts where you need a value, not just an action.
 
 ### Common Mistakes
 
@@ -404,13 +386,7 @@ let status = isActive ? "Active" : 0  // Error
 let status = isActive ? "Active" : "Inactive"
 ```
 
-**Key Insights:**
-
-- Required in SwiftUI and other declarative contexts
-- Both values must be the same type
-- Use WTF to remember: What? True : False
-- When to use: simple single-line conditions, when you need a value (not just an action), required in declarative contexts
-- When not to use: complex conditions (use regular if/else for readability), multi-line ternaries
+**When to use:** Simple single-line conditions, when you need a value (not just an action), or when required in declarative contexts. **When not to use:** Complex conditions (use regular if/else for readability) or multi-line ternaries.
 
 ---
 

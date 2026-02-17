@@ -1,6 +1,4 @@
-# Day 0 - How to Become an iOS Developer
-
-**February 14, 2026** • → [Day 1](/)
+**February 14, 2026** • → [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md)
 
 A complete roadmap for becoming an iOS developer: the essential skills you need, common mistakes to avoid, the best free resources, and how to connect with the community.
 
@@ -21,7 +19,7 @@ A complete roadmap for becoming an iOS developer: the essential skills you need,
 
 ## Core Skills (Must-Have)
 
-These are the five non-negotiable skills you need to land your first iOS job. Not fifteen, not twenty—five.
+These are the five non-negotiable skills you need to land your first iOS job. Not fifteen, not twenty—five. Master these, and you're qualified to build apps, work as an indie developer, or apply for junior iOS roles. No certifications required, no CS degree necessary—just these five skills and the projects you build with them.
 
 ### Swift
 
@@ -67,12 +65,6 @@ You don't need to be a Git expert, but you do need to know enough to:
 
 Why? Because recruiters want to see your code. GitHub is your portfolio. If you can push code to a repo and navigate basic version control, you're good to go.
 
-**Key Insights:**
-
-- These five skills are enough to build apps, work as an indie developer, or apply for junior iOS roles
-- No certifications required, no CS degree necessary—just these five skills and the projects you build with them
-- Master these before moving on to extension skills
-
 ---
 
 ## Extension Skills (Level-Up)
@@ -103,13 +95,9 @@ Like UIKit, Core Data shows its age. It was designed with Objective-C in mind an
 
 ### Testing
 
-Testing means writing code that verifies your app behaves correctly. Crucial for:
+Testing means writing code that verifies your app behaves correctly. Crucial for catching bugs before users do, confidently refactoring code, and ensuring new features don't break existing ones.
 
-- Catching bugs before users do
-- Confidently refactoring code
-- Ensuring new features don't break existing ones
-
-**Why is it an extension skill?**
+**Why is it an extension skill?** Three reasons:
 
 1. The iOS community historically hasn't emphasized testing as much as other platforms
 2. Many developers find it less exciting than building features
@@ -133,17 +121,11 @@ It's powerful but tricky. Parallel code can be hard to reason about, and adding 
 
 The goal isn't to become a concurrency expert. It's to understand enough to use it safely and correctly in Swift without overcomplicating your apps.
 
-**Key Insights:**
-
-- Extension skills make you more competitive but aren't required to get started
-- Learn them after you're comfortable with the core five
-- UIKit and Core Data are powerful but show their age—don't rush into them
-- Testing is important professionally but less critical when job hunting as a junior
-- Architecture improves with experience—your code will be messy at first and that's okay
-
 ---
 
 ## Common Mistakes to Avoid
+
+These are the seven traps that slow down most learners. Avoid them, and you'll progress much faster.
 
 ### Trying to Memorize Everything
 
@@ -167,15 +149,13 @@ Trying to learn iOS development completely on your own is a recipe for frustrati
 
 **The fix:** Connect with fellow learners. Share your progress, ask questions, engage with the community. You'll gain support, encouragement, and inspiration—and you'll learn way faster while enjoying the process more.
 
+Community connection is essential, not optional. This is how you meet peers, learn more effectively, discover job opportunities, and stay motivated.
+
 ### Using Beta Software
 
 It's tempting to download the latest beta of iOS or Xcode to try out new features. Don't do it—at least not while you're learning.
 
-Betas cause problems:
-
-- Tutorials won't match your setup
-- Bugs are common and frustrating
-- APIs change between versions, breaking your code
+Betas cause problems: tutorials won't match your setup, bugs are common and frustrating, and APIs change between versions, breaking your code.
 
 Stick with the latest public releases until you're confident. Save the beta experimentation for when you know what you're doing.
 
@@ -201,21 +181,11 @@ These languages aren't competitors—they each have strengths. In fact, Swift bo
 
 Language wars are a distraction. Focus on learning Swift well, and appreciate what other languages bring to the table.
 
-**Key Insights:**
-
-- Forgetting is part of learning—repetition strengthens knowledge
-- Push through difficult sections instead of jumping to new tutorials
-- Community support is essential—don't go it alone
-- Use stable releases, not betas, while learning
-- Apple's docs are reference material, not learning material
-- Skip Objective-C unless you have a specific reason to learn it
-- Avoid language wars—focus on learning Swift well
-
 ---
 
 ## Learning Resources (All Free)
 
-You can learn everything you need to become an iOS developer **without spending a dime**.
+You can learn everything you need to become an iOS developer **without spending a dime**. Expensive courses don't guarantee better results—by sticking to free resources, you avoid that trap and can start building real skills without financial risk.
 
 ### Structured Tutorials
 
@@ -248,24 +218,18 @@ You can learn everything you need to become an iOS developer **without spending
 
 ### Finding Answers
 
+When you get stuck, these communities are beginner-friendly and eager to help:
+
 - **Hacking with Swift Forums**
 - **iOS Dev Happy Hour**
 - Slack groups (see community section below)
 - Stack Overflow (less welcoming to beginners)
 
-**Key Insights:**
-
-- Everything you need is available for free—no need to buy expensive courses
-- 100 Days of SwiftUI is highly recommended for structured learning
-- YouTube channels provide visual learning alternatives
-- Learning apps let you practice on your device
-- Community forums are beginner-friendly and eager to help
-
 ---
 
 ## Connecting to the Community
 
-Connecting with the iOS development community isn't optional—it's essential. This is how you meet peers, learn more effectively, discover job opportunities, and stay motivated.
+Following active developers exposes you to projects, tutorials, and inspiration. Forums and Slack groups provide quick answers and support. Meetups and conferences help you network and stay motivated.
 
 ### Who to Follow on Twitter/X
 
@@ -287,13 +251,6 @@ Connecting with the iOS development community isn't optional—it's essential. T
 - **Zoom Meetup:** [**iOS Dev Happy Hour**](https://www.iosdevhappyhour.com/) - Monthly calls with 300+ attendees
 - **Conference:** [**Apple's WWDC**](https://developer.apple.com/wwdc25/) - Major annual event for learning and networking
 - **Slack Group:** [**Hacking with Swift Slack**](https://hackingwithswift.slack.com/join/shared_invite/zt-3fkgtqzok-3wQokMcNg80XWBt_3pSgaA) - Free channels for Swift, SwiftUI, 100 Days
-
-**Key Insights:**
-
-- Community connection is essential, not optional
-- Following active developers exposes you to projects, tutorials, and inspiration
-- Forums and Slack groups provide quick answers and support
-- Meetups and conferences help you network and stay motivated
 
 ---
 
@@ -325,14 +282,6 @@ It takes as long as it takes. Life happens—stress, family, unexpected events. 
 
 Progress isn't measured by a fixed timeline. Whether you land a job in 50 days, 500 days, or longer, the important thing is that you keep going. Resilience matters more than speed.
 
-**Key Insights:**
-
-- Don't rush—depth beats speed
-- Timeline varies based on background: 9-12 months with no experience, less if you have programming fundamentals
-- CS degree can cut 4-6 months off learning time but isn't required
-- Mistakes are part of learning, not setbacks
-- Resilience matters more than speed
-
 ---
 
 ## Preparing to Apply for Jobs
@@ -352,4 +301,4 @@ This includes:
 
 ---
 
-**Next:** [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md)
+**Next:** [Day 1 - First Steps in Swift](/)

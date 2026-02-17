@@ -59,7 +59,7 @@ var isAuthenticated = false
 isAuthenticated = !isAuthenticated  // false → true
 ```
 
-This switches `false` to `true`, and vice versa.
+This switches `false` to `true`, and vice versa. The `!` operator means "not"—it creates a flipped copy but doesn't change the original.
 
 **Using `.toggle()` method (modifies in place):**
 
@@ -68,7 +68,7 @@ var gameOver = false
 gameOver.toggle()  // flips from false to true
 ```
 
-This does the same as `!`, and is especially helpful in complex code where you just want to flip a state without caring what it currently is.
+This does the same as `!` but modifies the value directly. It's especially helpful in complex code where you just want to flip a state without caring what it currently is.
 
 ### Common Mistakes
 
@@ -86,13 +86,7 @@ let isEnabled = true
 let isDisabled = !isEnabled  // isDisabled is false, isEnabled still true
 ```
 
-**Key Insights:**
-
-- Booleans store `true` or `false`
-- Use `!` to create a flipped copy (doesn't change original)
-- Use `.toggle()` to flip in place (must be `var`)
-- Used constantly in apps for conditions, flags, and state tracking
-- Named after George Boole, mathematician who studied logic
+Booleans are used constantly in apps for conditions, flags, and state tracking.
 
 ---
 
@@ -163,7 +157,7 @@ Compare this to the old way:
 let missionMessage = "Apollo " + String(number) + " landed on the moon."
 ```
 
-String interpolation is cleaner, faster, and more versatile. It's the standard approach in Swift.
+String interpolation is cleaner, faster, and more versatile. It's the standard approach in Swift—use it over `+`.
 
 ### Common Mistakes
 
@@ -189,16 +183,7 @@ let isActive = true
 let status = "Status: \(isActive)"  // "Status: true"
 ```
 
-**Key Insights:**
-
-- Use string interpolation `\(variable)` instead of `+` for joining strings
-- More efficient: doesn't create temporary strings like `+` does
-- Cleaner: no manual type conversion needed
-- Handles automatic type conversion for any data type
-- Works with expressions: `\(5 * 5)` evaluates and inserts result
-- Standard approach in Swift—prefer it over `+`
-- String interpolation inserts dynamic data at runtime, essential for showing user-specific information
-- For advanced formatting and custom string interpolation: [Super-powered String Interpolation](https://www.hackingwithswift.com/articles/178/super-powered-string-interpolation-in-swift-5-0)
+String interpolation inserts dynamic data at runtime, essential for showing user-specific information. It works with expressions (`\(5 * 5)` evaluates and inserts the result) and automatically handles type conversion.
 
 ---
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 5 - Conditions.md",
+                "file": "Day 0 - How to become an iOS developer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 5 - Conditions"
+              "title": "Day 0 - How to become an iOS developer"
             }
           },
           {
@@ -200,12 +200,12 @@
   "active": "df481c02f2a86693",
   "lastOpenFiles": [
     "Day 1 - First steps in Swift.md",
-    "Day 0 - How to become an iOS developer.md",
     "Day 2 - Simple data types, part 2.md",
-    "Day 6 - Loops.md",
-    "README.md",
-    "Day 5 - Conditions.md",
+    "Day 3 - Complex data types, part 1.md",
     "Day 4 - Complex data types, part 2.md",
-    "Day 3 - Complex data types, part 1.md"
+    "Day 5 - Conditions.md",
+    "Day 0 - How to become an iOS developer.md",
+    "Day 6 - Loops.md",
+    "README.md"
   ]
 }

@@ -40,6 +40,8 @@ var style: UIStyle = .light
 
 ## Type Inference vs Type Annotation
 
+Swift has **type inference**—it figures out the type based on the value you assign. But sometimes you want to be explicit with **type annotation**.
+
 **Type inference** (Swift figures it out):
 
 ```swift
@@ -54,6 +56,8 @@ let surname: String = "Lasso"
 var score: Int = 0
 ```
 
+This is **type safety** in action—Swift must always know what type each constant/variable holds. This prevents errors like `5 + true`.
+
 ### Why Use Type Annotations?
 
 Sometimes you want to override Swift's choice:
@@ -63,6 +67,14 @@ var score: Double = 0  // Without :Double, Swift would infer Int
 ```
 
 Now `score` is a decimal (0.0) instead of a whole number.
+
+**Three reasons to use type annotations:**
+
+1. Swift can't figure out the type (like loading data from the internet)
+2. You want a different type from Swift's default
+3. You don't want to assign a value yet
+
+Use type inference as much as possible—it's cleaner and easier to read. Only use annotations when needed.
 
 ### Type Annotation for All Types
 
@@ -91,7 +103,7 @@ var books: Set<String> = Set(["The Bluest Eye", "Foundation"])
 
 ### Creating Empty Collections
 
-Type annotation is needed when creating empty collections:
+Type annotation is needed when creating empty collections so Swift knows what they'll contain:
 
 ```swift
 var teams: [String] = [String]()  // full syntax
@@ -141,12 +153,7 @@ username = "@twostraws"
 print(username)
 ```
 
-Swift ensures:
-
-- You don't use `username` before it has a value
-- You only set the value once (it remains constant)
-
-This requires type annotation because Swift needs to know what type `username` will contain.
+Swift ensures you don't use `username` before it has a value, and you only set the value once (it remains constant). This requires type annotation because Swift needs to know what type `username` will contain.
 
 ### Common Mistakes
 
@@ -169,23 +176,13 @@ name = "Taylor"
 name = "Swift"  // Error: cannot assign to value: 'name' is a 'let' constant
 ```
 
-**Key Insights:**
-
-- **Type inference**: Swift figures out the type from the value you assign
-- **Type annotation**: You explicitly tell Swift the type with a colon (`:`)
-- **Three reasons to use type annotations**: (1) Swift can't figure out the type, (2) You want a different type from Swift's default, (3) You don't want to assign a value yet
-- **Type safety**: Swift must always know what type each constant/variable holds—prevents errors like `5 + true`
-- **Personal preference**: Use type inference as much as possible—cleaner and easier to read. Only use annotations when needed
-- Empty collections require type annotation so Swift knows what they'll contain
-- Constants can be declared without values but must be assigned exactly once before use
-
 ---
 
 ## Summary: Complex Data Types
 
 ### Arrays
 
-- Store lots of values in one place, accessed by integer index (0, 1, 2...)
+- Store ordered collections of the same type, accessed by integer index (0, 1, 2...)
 - Syntax: `[String]`, `[Int]`, etc.
 - Methods: `count`, `append()`, `contains()`, `remove(at:)`, `sorted()`
 - Most commonly used collection type
@@ -199,7 +196,7 @@ print(albums.contains("Red"))  // true
 
 ### Dictionaries
 
-- Store lots of values accessed by keys you specify
+- Store values accessed by keys you specify
 - Syntax: `[String: Int]`, `[String: String]`, etc.
 - Methods: `contains()`, `count`, `removeAll()`
 - Return optionals when reading keys (key might not exist)
@@ -210,9 +207,15 @@ print(user["name"])  // Optional("Taylor")
 print(user["address"])  // nil (doesn't exist)
 ```
 
+Dictionaries return optionals because keys might not exist. Use default values to avoid dealing with optionals:
+
+```swift
+print(user["name", default: "Unknown"])
+```
+
 ### Sets
 
-- Store lots of values without order
+- Store unique values without order
 - Extremely efficient at finding if they contain a specific item
 - Automatically remove duplicates
 - Syntax: `Set<String>`, `Set<Int>`, etc.
@@ -223,6 +226,8 @@ var numbers = Set([1, 2, 3, 2, 1])
 print(numbers)  // [1, 2, 3] - duplicates removed
 print(numbers.contains(2))  // true - very fast
 ```
+
+Sets are perfect for removing duplicates from arrays or when you need very fast lookups.
 
 ### Enums
 
@@ -237,13 +242,9 @@ enum Weather {
 let today = Weather.sun
 ```
 
-**Key Insights:**
+Enums prevent invalid values—you can't accidentally use a string that doesn't match.
 
-- **Usage frequency**: Arrays (most common) → Dictionaries → Sets → Enums
-- Arrays maintain order, sets don't but are faster for membership checks
-- Dictionaries return optionals because keys might not exist
-- Sets automatically handle uniqueness—perfect for removing duplicates
-- Enums prevent invalid values—you can't accidentally use a string that doesn't match
+**Usage frequency:** Arrays (most common) → Dictionaries → Sets → Enums. Arrays maintain order, sets don't but are faster for membership checks.
 
 ---
 

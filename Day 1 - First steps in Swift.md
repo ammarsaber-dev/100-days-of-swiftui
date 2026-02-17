@@ -77,7 +77,7 @@ name = "Rebecca"
 name = "Keeley"
 ```
 
-Variables hold temporary information that needs to be updated. Your app takes data—user input, downloaded content, device info—transforms it, and shows it to the user. Variables handle that transformation.
+Variables hold temporary information that needs to be updated. Your app takes data—user input, downloaded content, device info—transforms it, and shows it to the user. Variables handle that transformation. They're central to almost every Swift program.
 
 ### Constants Cannot Change
 
@@ -88,7 +88,7 @@ let character = "Daphne"
 
 Constants are like making a contract with Swift: "this value matters, don't let it change." Once set, the value is locked in. This prevents accidental changes and helps avoid bugs.
 
-`let` comes from math: "let x equal 5."
+`let` comes from math: "let x equal 5." Prefer constants when possible—they're safer and help Swift optimize your code.
 
 ### Printing Values
 
@@ -135,14 +135,7 @@ let playername = "Roy"
 print(playerName)     // Error: playerName not found
 ```
 
-**Key Insights:**
-
-- Use `let` for values that won't change, `var` for values that will
-- Prefer constants when possible—safer and helps Swift optimize your code
-- Always use camelCase for naming
-- Once created, don't redeclare with `var` or `let` again
-- Swift enforces clarity: creating a new variable vs. modifying an existing one
-- Variables are central to almost every Swift program—they store temporary information your app transforms and displays
+Swift enforces clarity: are you creating a new variable, or modifying an existing one? Once created, don't redeclare with `var` or `let` again.
 
 ---
 
@@ -156,7 +149,7 @@ let filename = "paris.jpg"
 let result = "You win!"
 ```
 
-Strings are everywhere in apps—user names, button labels, error messages, downloaded text.
+Strings are everywhere in apps—user names, button labels, error messages, downloaded text. Understanding strings is essential.
 
 ### Escaping Quotes
 
@@ -192,13 +185,15 @@ let nameLength = actor.count
 print(nameLength)
 ```
 
+No parentheses needed for `.count` because you're just reading data—it's a property, not doing work.
+
 **Modifying text:**
 
 ```swift
 print(result.uppercased())
 ```
 
-Use parentheses `()` for methods that do work. No parentheses for properties like `.count` that just read data.
+Use parentheses `()` for methods that do work, like `.uppercased()`.
 
 **Checking text:**
 
@@ -236,17 +231,6 @@ Line two
 let filename = "Paris.JPG"
 filename.hasSuffix(".jpg")  // Returns false (case matters!)
 ```
-
-**Key Insights:**
-
-- Strings use double quotes
-- Escape internal quotes with `\`
-- Multi-line strings use `"""` on their own lines
-- Use `.count` to read length (no parentheses)
-- Use methods with `()` when Swift does work (like `.uppercased()`)
-- Strings are case-sensitive
-- Multi-line strings preserve line breaks as part of the string
-- Understanding strings is essential—they're everywhere in apps
 
 ---
 
@@ -335,15 +319,7 @@ let number = _100_000  // Error: invalid syntax
 let number = 100_000
 ```
 
-**Key Insights:**
-
-- Use `Int` for whole numbers
-- Underscores make large numbers readable (purely for programmers, Swift ignores them)
-- Use `+`, `-`, `*`, `/` for arithmetic
-- Use `+=`, `-=`, `*=`, `/=` as shortcuts
-- Integer division truncates (drops) decimal values
-- Methods like `.isMultiple(of:)` check properties of numbers
-- Integers are used constantly in programming for counting, indexing, and representing whole quantities
+Integer division truncates (drops) decimal values. If you need decimals, use Double.
 
 ---
 
@@ -383,7 +359,7 @@ let c = a + Int(b)      // Double → Int (loses decimal)
 let c = Double(a) + b   // Int → Double (safe)
 ```
 
-This seems annoying at first, but it prevents bugs. Swift is protecting you from accidentally losing precision.
+This seems annoying at first, but it prevents bugs. Swift is protecting you from accidentally losing precision. Integers are 100% accurate, doubles are approximations—that's why Swift won't let you mix them accidentally.
 
 ### How Swift Decides Types
 
@@ -402,7 +378,7 @@ name = "John Travolta"  // works (both strings)
 name = 57               // Error! (can't change String to Int)
 ```
 
-This is **type safety** in action. Swift determines the type based on the initial value, then locks it in. You can change the value, but never the type.
+This is **type safety** in action. Swift determines the type based on the initial value, then locks it in. You can change the value, but never the type. Type safety prevents data mistakes—as programs grow complex, Swift tracks types for you.
 
 ### Operators
 
@@ -447,15 +423,7 @@ let half = 1 / 2  // result is 0 (integer division!)
 let half = 1.0 / 2.0  // result is 0.5
 ```
 
-**Key Insights:**
-
-- Use `Double` for decimal numbers
-- Can't mix `Int` and `Double` without explicit conversion (prevents accidental precision loss)
-- Swift determines type by presence of decimal point: `3.0` is Double, `3` is Int
-- Floating-point arithmetic isn't perfectly precise (computers use binary approximations)
-- Once a variable's type is set, it can't change (type safety)
-- Type safety prevents data mistakes—as programs grow complex, Swift tracks types for you
-- Integers are 100% accurate, doubles are approximations—that's why Swift won't let you mix them accidentally
+Computers use binary—they can't store numbers like 1/3 exactly, so they create very close approximations. It's extremely efficient, and the error is usually irrelevant.
 
 ---
 
