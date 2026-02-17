@@ -1,6 +1,6 @@
-**Date: February 15, 2026**
+**February 15, 2026** • [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md) ← → [Day 3 - Complex data types, part 1](Day%203%20-%20Complex%20data%20types,%20part%201.md)
 
-> **Quick Summary:** Today you'll learn about Booleans (true/false values) and string interpolation (building strings with dynamic data). Plus your first checkpoint where you'll write real code from scratch. Two simple concepts that you'll use in literally every app you build.
+Learn about Booleans (true/false values) and string interpolation (building strings with dynamic data). Plus Checkpoint 1 where you'll write real code from scratch.
 
 ---
 
@@ -20,31 +20,9 @@ let math = "5 x 5 is \(5 * 5)"
 
 ---
 
-## Today's Mission
+## Booleans
 
-"Lynch's Law" says that when things get tough, people quit — so well done for coming back for day 2!
-
-Yesterday you learned about simple data types (single values like numbers and strings). Today, you'll continue with Booleans (storing true/false values) and string interpolation (building strings from other values).
-
-Today also includes your first checkpoint, where you'll write your own code to test your understanding. Starting from scratch can be challenging, but you'll have plenty of time and helpful hints.
-
-### Day 2 Topics
-
-1. [How to store truth with Booleans](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-truth-with-booleans)
-    - Test: [Doubles and Booleans](https://www.hackingwithswift.com/review/sixty/doubles-and-booleans)
-2. [How to join strings together](https://www.hackingwithswift.com/quick-start/beginners/how-to-join-strings-together)
-    - Optional: [Why does Swift have string interpolation?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-string-interpolation)
-    - Test: [String interpolation](https://www.hackingwithswift.com/review/sixty/string-interpolation)
-3. [Summary: Simple data](https://www.hackingwithswift.com/quick-start/beginners/summary-simple-data)
-
-When you’re ready, please proceed onto the checkpoint:
-- [Checkpoint 1](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-1)
-
----
-
-## 1. How to Store Truth with Booleans
-
-Alongside strings, integers, and decimals, there's another simple data type: **Boolean**. A Boolean stores either `true` or `false`. It's named after mathematician George Boole, who studied logic.
+A **Boolean** stores either `true` or `false`. Named after mathematician George Boole, who studied logic.
 
 ### Why Booleans Matter
 
@@ -62,22 +40,19 @@ Both checks return either `true` or `false`, which is exactly what Booleans s
 
 ### Creating Booleans
 
-You can create Booleans directly:
-
 ```swift
 let goodDogs = true
 let gameOver = false
-```
 
-Or assign them from expressions that evaluate to true or false:
-
-```swift
+// Or assign from expressions
 let isMultiple = 120.isMultiple(of: 3)
 ```
 
 ### Flipping Boolean Values
 
-Booleans don't support arithmetic like `+` or `-`, but they do have the `!` operator, meaning "not," which flips the value:
+Booleans don't support arithmetic like `+` or `-`, but they have two ways to flip values:
+
+**Using `!` operator (creates new value):**
 
 ```swift
 var isAuthenticated = false
@@ -86,23 +61,23 @@ isAuthenticated = !isAuthenticated  // false → true
 
 This switches `false` to `true`, and vice versa.
 
-Booleans also have a `toggle()` method that flips their value in place:
+**Using `.toggle()` method (modifies in place):**
 
 ```swift
 var gameOver = false
 gameOver.toggle()  // flips from false to true
 ```
 
-This does the same as `!`, and is especially helpful in more complex code where you just want to flip a state without caring what it currently is.
+This does the same as `!`, and is especially helpful in complex code where you just want to flip a state without caring what it currently is.
 
 ### Common Mistakes
 
 ```swift
-// WRONG: Trying to toggle a constant
+// ❌ Trying to toggle a constant
 let gameOver = false
 gameOver.toggle()  // Error: cannot mutate constant
 
-// CORRECT: Use var for values that change
+// ✅ Use var for values that change
 var gameOver = false
 gameOver.toggle()
 
@@ -111,11 +86,17 @@ let isEnabled = true
 let isDisabled = !isEnabled  // isDisabled is false, isEnabled still true
 ```
 
-**Key Takeaway:** Booleans store `true` or `false`. Use `!` to create a flipped copy. Use `.toggle()` to flip in place. Must use `var` to toggle.
+**Key Insights:**
+
+- Booleans store `true` or `false`
+- Use `!` to create a flipped copy (doesn't change original)
+- Use `.toggle()` to flip in place (must be `var`)
+- Used constantly in apps for conditions, flags, and state tracking
+- Named after George Boole, mathematician who studied logic
 
 ---
 
-## 2. How to Join Strings Together
+## String Interpolation
 
 Swift lets us combine strings in two ways: using `+` or **string interpolation**. One is straightforward but inefficient. The other is cleaner, faster, and handles different data types automatically.
 
@@ -125,12 +106,13 @@ Using `+`, you can join strings together:
 
 ```swift
 let greeting = "Hello, " + "world!"
+
 let people = "Haters"
 let action = "hate"
 let lyric = people + " gonna " + action  // "Haters gonna hate"
 ```
 
-This works fine for simple cases. Using `+` for strings is an example of **operator overloading** — the same operator can add numbers or join strings. `+=` also works for strings.
+This works fine for simple cases. Using `+` for strings is an example of **operator overloading**—the same operator can add numbers or join strings. `+=` also works for strings.
 
 ### The Problem with +
 
@@ -143,6 +125,16 @@ let code = "1" + "2" + "3" + "4" + "5"
 ```
 
 For small strings this doesn't matter. But in real apps where you're building complex strings repeatedly, this adds up.
+
+Also, `+` doesn't work with different types:
+
+```swift
+let age = 26
+let message = "I am " + age  // Error: cannot concatenate String and Int
+
+// Works but clunky: manually convert to String
+let message = "I am " + String(age)
+```
 
 ### String Interpolation: The Better Way
 
@@ -161,6 +153,7 @@ You can include integers, decimals, calculations, or any Swift value:
 ```swift
 let number = 11
 let mission = "Apollo \(number) landed on the moon."
+
 print("5 x 5 is \(5 * 5)")  // "5 x 5 is 25"
 ```
 
@@ -175,20 +168,20 @@ String interpolation is cleaner, faster, and more versatile. It's the standard a
 ### Common Mistakes
 
 ```swift
-// WRONG: Mixing types with + operator
+// ❌ Mixing types with + operator
 let age = 26
 let message = "I am " + age  // Error: cannot concatenate String and Int
 
-// Works but clunky: manually convert to String
+// ⚠️ Works but clunky: manually convert to String
 let message = "I am " + String(age)
 
-// Better: use string interpolation
+// ✅ Better: use string interpolation
 let message = "I am \(age)"
 
-// WRONG: Forgetting the backslash
+// ❌ Forgetting the backslash
 let message = "Hello (name)"  // Prints "Hello (name)" literally
 
-// CORRECT: Include backslash
+// ✅ Include backslash
 let message = "Hello \(name)"
 
 // String interpolation works with any type
@@ -196,30 +189,20 @@ let isActive = true
 let status = "Status: \(isActive)"  // "Status: true"
 ```
 
-**Key Takeaway:** Use string interpolation `\(variable)` instead of `+`. It's more efficient, cleaner, and handles type conversion automatically. Works with any data type.
+**Key Insights:**
 
-### Optional: Why Does Swift Have String Interpolation?
-
-Swift uses string interpolation to insert dynamic data into strings at runtime. This is useful when showing information to your user—whether messages being printed, text on buttons, or other app content—because we usually want to display relevant data rather than static strings.
-
-String interpolation replaces parts of a string with values we provide:
-
-```swift
-var city = "Cardiff"
-var message = "Welcome to \(city)!"
-```
-
-In this simple example, we could have just written `"Welcome to Cardiff!"`, but in real apps, dynamic insertion lets us show real-world user data rather than hardcoded text.
-
-Swift can place any kind of data inside string interpolation. The result might not always be meaningful, but for all basic Swift types—strings, integers, Booleans, etc.—the results work seamlessly.
-
-**Going Deeper:** String interpolation is extremely powerful in Swift. For advanced examples like custom formatting and complex expressions, see: https://www.hackingwithswift.com/articles/178/super-powered-string-interpolation-in-swift-5-0
+- Use string interpolation `\(variable)` instead of `+` for joining strings
+- More efficient: doesn't create temporary strings like `+` does
+- Cleaner: no manual type conversion needed
+- Handles automatic type conversion for any data type
+- Works with expressions: `\(5 * 5)` evaluates and inserts result
+- Standard approach in Swift—prefer it over `+`
+- String interpolation inserts dynamic data at runtime, essential for showing user-specific information
+- For advanced formatting and custom string interpolation: [Super-powered String Interpolation](https://www.hackingwithswift.com/articles/178/super-powered-string-interpolation-in-swift-5-0)
 
 ---
 
-## 3. Summary: Simple Data
-
-We've covered a lot about the basics of data. Here's everything in one place:
+## Summary: Simple Data Types
 
 **Constants and Variables**
 
@@ -262,13 +245,11 @@ We've covered a lot about the basics of data. Here's everything in one place:
 - Type can't change once set
 - Must convert between types explicitly
 
-It's a lot, but you'll use these repeatedly in apps until it all feels natural.
-
 ---
 
-## 4. Checkpoint 1
+## Checkpoint 1
 
-Time to write your first real program from scratch. No copying and pasting, no following line-by-line instructions—just you, your keyboard, and the skills you've learned.
+Time to write your first real program from scratch. No copying and pasting, no following line-by-line instructions—just you and the skills you've learned.
 
 ### The Challenge
 
@@ -280,7 +261,7 @@ Convert temperatures from Celsius to Fahrenheit.
 - Converts it to Fahrenheit by multiplying by 9, dividing by 5, then adding 32
 - Prints both Celsius and Fahrenheit values for the user
 
-### Hints (Use These If You Get Stuck)
+### Hints
 
 - Use `let` to create your constant—naming it `celsius` would make sense
 - Celsius is usually a decimal, so use something like `25.0` instead of `25`
@@ -294,20 +275,8 @@ This checkpoint tests whether you've absorbed the fundamentals. It's deliberatel
 
 If you get stuck, that's normal. Reread the relevant sections, experiment, and don't be afraid to make mistakes. Every error message is teaching you something.
 
-Try building it yourself before looking at any solution. The course will get more challenging soon, and this ensures you've fully understood the fundamentals.
+**Try building it yourself before looking at any solution.** Struggling is part of learning—spend time thinking about it first!
 
 ---
 
-## Where Now?
-
-You've completed Day 2. You now understand all the basic simple data types in Swift: strings, integers, doubles, and Booleans. You know how to store values, perform calculations, and build dynamic strings.
-
-More importantly, you've written your first program from scratch. That's a real milestone—many people never get this far.
-
-**Tomorrow:** You'll move from simple data to collections—arrays, dictionaries, sets, and enums. These let you store multiple values together, which is essential for building real apps.
-
-Keep going. You're making real progress.
-
----
-
-**Previous:** [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md) | **Next:** [Day 3 - Complex data types, part 1](Day%203%20-%20Complex%20data%20types,%20part%201.md)
+**Topics:** [Booleans](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-truth-with-booleans) • [String Interpolation](https://www.hackingwithswift.com/quick-start/beginners/how-to-join-strings-together) • [Simple Data Summary](https://www.hackingwithswift.com/quick-start/beginners/summary-simple-data) • [Checkpoint 1](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-1)

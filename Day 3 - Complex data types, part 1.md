@@ -1,6 +1,6 @@
-**Date: February 15, 2026**
+**February 15, 2026** • [Day 2](/) ← → [Day 4](/)
 
-> **Quick Summary:** Today you'll learn about arrays, dictionaries, sets, and enums—ways to group multiple pieces of data together. These are the building blocks for storing collections of information in your apps. Choose the wrong one while learning and nothing bad happens—just experiment and see what works.
+Learn about arrays, dictionaries, sets, and enums—ways to group multiple pieces of data together.
 
 ---
 
@@ -36,36 +36,9 @@ day = .tuesday                  // shorthand after first use
 
 ---
 
-## Today's Mission
+## Arrays
 
-Today we're looking at complex data types that group data together. Understanding the differences between them, and knowing which to use when, can sometimes trip folks up when learning – as Joseph Campbell once said, "computers are like Old Testament gods: lots of rules and no mercy."
-
-Don't worry: the types we're learning today cover the overwhelming majority of requirements, and if you choose the wrong one while learning, nothing bad will happen.
-
-**Common beginner mistake:** Fear of running code. Trust me – none of the code here can break your computer. Make a change and run it. Make another change and run that. Experiment until you feel comfortable – it all helps.
-
-### Day 3 Topics
-
-1. [How to store ordered data in arrays](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-ordered-data-in-arrays)
-    - Optional: [Why does Swift have arrays?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-arrays)
-    - Test: [Arrays](https://www.hackingwithswift.com/review/sixty/arrays)
-2. [How to store and find data in dictionaries](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-and-find-data-in-dictionaries)
-    - Optional: [Why does Swift have dictionaries as well as arrays?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-dictionaries-as-well-as-arrays)
-    - Optional: [Why does Swift have default values for dictionaries?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-default-values-for-dictionaries)
-    - Test: [Dictionaries](https://www.hackingwithswift.com/review/sixty/dictionaries)
-    - Test: [Dictionary default values](https://www.hackingwithswift.com/review/sixty/dictionary-default-values)
-3. [How to use sets for fast data lookup](https://www.hackingwithswift.com/quick-start/beginners/how-to-use-sets-for-fast-data-lookup)
-    - Optional: [Why are sets different from arrays in Swift?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-are-sets-different-from-arrays-in-swift)
-    - Test: [Sets](https://www.hackingwithswift.com/review/sixty/sets)
-4. [How to create and use enums](https://www.hackingwithswift.com/quick-start/beginners/how-to-create-and-use-enums)
-    - Optional: [Why does Swift need enums?](https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-need-enums)
-    - Test: [Enumerations](https://www.hackingwithswift.com/review/sixty/enumerations)
-
----
-
-## 1. How to Store Ordered Data in Arrays
-
-**Arrays** group multiple values of the same type in order. They can hold zero to millions of items and automatically adapt to any size.
+Arrays group multiple values of the same type in order. They hold zero to millions of items and automatically adapt to size.
 
 ### Creating and Reading Arrays
 
@@ -75,23 +48,12 @@ let numbers = [4, 8, 15, 16, 23, 42]
 var temperatures = [25.3, 28.2, 26.4]
 ```
 
-Arrays use square brackets with commas between items.
-
 **Reading by index** (starts at 0):
 
 ```swift
 print(beatles[0])      // "John" (first item)
 print(numbers[1])      // 8 (second item)
 print(temperatures[2]) // 26.4 (third item)
-```
-
-**Important:** Accessing an index that doesn't exist crashes your app.
-
-### Modifying Arrays
-
-```swift
-beatles.append("Adrian")
-beatles.append("Allen")  // can add duplicates
 ```
 
 ### Type Safety
@@ -109,14 +71,15 @@ let notAllowed = firstBeatle + firstNumber  // Error: can't mix types
 ### Creating Empty Arrays
 
 ```swift
+// Full syntax
 var scores = Array<Int>()
 scores.append(100)
 
-// Shorthand (preferred):
+// Shorthand (preferred)
 var albums = [String]()
 albums.append("Folklore")
 
-// Swift infers type from initial values:
+// Swift infers type from initial values
 var albums = ["Folklore"]  // Swift knows it's [String]
 albums.append("Fearless")
 ```
@@ -139,7 +102,7 @@ print(bondMovies.contains("Frozen"))  // false
 let cities = ["London", "Tokyo", "Rome", "Budapest"]
 print(cities.sorted())
 
-// Reverse (doesn't rearrange, just remembers)
+// Reverse (doesn't rearrange, just remembers to reverse when accessed)
 let presidents = ["Bush", "Obama", "Trump", "Biden"]
 let reversedPresidents = presidents.reversed()
 ```
@@ -147,36 +110,34 @@ let reversedPresidents = presidents.reversed()
 ### Common Mistakes
 
 ```swift
-// WRONG: Index out of range
+// ❌ Index out of range
 let names = ["Anna", "Alex", "Brian"]
 print(names[10])  // Crash!
 
-// WRONG: Appending to constant
+// ❌ Appending to constant
 let scores = [100, 90, 85]
 scores.append(95)  // Error
 
-// CORRECT:
+// ✅ Use var for mutable arrays
 var scores = [100, 90, 85]
 scores.append(95)
 ```
 
-**Key Takeaway:** Arrays store ordered collections of the same type. Index starts at 0. Use `var` for mutable arrays. Methods: `append()`, `remove()`, `contains()`, `sorted()`, `count`.
+**Key Insights:**
 
-### Optional: Why Does Swift Have Arrays?
-
-Swift's simple types (String, Int, Bool, Double) store single values. Arrays store many values together.
-
-Useful for weekday names, temperature forecasts, high scores, or any collection of related data.
-
-Arrays can be any size and grow/shrink as needed (if variable). Items accessed by position starting from 0 (**zero-based indexing**).
-
-Swift crashes if you access an invalid index rather than returning wrong data—better to crash than silently fail.
+- Arrays store ordered collections of the same type
+- Index starts at 0 (zero-based indexing)
+- Accessing invalid index crashes your app—better than silently returning wrong data
+- Use `var` for arrays you need to modify
+- Arrays can hold any number of items and grow/shrink automatically (if `var`)
+- Use arrays when order matters or duplicates are needed (most common use case)
+- Methods: `append()`, `remove(at:)`, `removeAll()`, `contains()`, `sorted()`, `reversed()`, `count`
 
 ---
 
-## 2. How to Store and Find Data in Dictionaries
+## Dictionaries
 
-Arrays are great for ordered data, but accessing by position can be dangerous. **Dictionaries** store data using meaningful keys instead of positions.
+Arrays access data by position, which can be dangerous. Dictionaries store data using meaningful keys instead.
 
 ### The Problem with Arrays
 
@@ -199,29 +160,23 @@ let employee2 = [
     "job": "Singer", 
     "location": "Nashville"
 ]
-```
 
-Keys are on the left, values on the right. Much clearer than array indices.
-
-### Reading from Dictionaries
-
-```swift
 print(employee2["name"])
 print(employee2["job"])
 print(employee2["location"])
 ```
+
+Keys are on the left, values on the right. Much clearer than array indices.
 
 ### Optionals and Default Values
 
 Reading a non-existent key returns an **optional** (might be nil):
 
 ```swift
-print(employee2["password"])  // key doesn't exist!
+print(employee2["password"])  // key doesn't exist, returns nil
 ```
 
-Swift doesn't crash like arrays—it returns an optional.
-
-**Solution:** Provide a default value:
+Swift doesn't crash like arrays—it returns an optional. Provide a default value:
 
 ```swift
 print(employee2["name", default: "Unknown"])
@@ -270,56 +225,45 @@ archEnemies["Batman"] = "Penguin"  // overwrites "The Joker"
 ### Common Mistakes
 
 ```swift
-// WRONG: Reading without default returns Optional
+// ❌ Reading without default returns Optional
 let name = employee2["name"]  // Optional("Taylor Swift")
 
-// CORRECT: Use default value
+// ✅ Use default value
 let name = employee2["name", default: "Unknown"]
 
-// Empty dictionary needs type
+// ❌ Empty dictionary needs type
 var data = [:]  // Error
-var data = [String: Int]()  // Correct
+
+// ✅ Specify types
+var data = [String: Int]()
 ```
 
-**Key Takeaway:** Dictionaries store data with meaningful keys. Reading non-existent keys returns optionals. Use `default:`for fallback values. Keys must be unique—setting existing keys overwrites values.
+**Key Insights:**
 
-### Optional: Why Does Swift Have Dictionaries as Well as Arrays?
+- Dictionaries store data with meaningful keys instead of numeric indices
+- Reading non-existent keys returns optionals (nil), not crashes
+- Use `default:` for fallback values when key might not exist
+- Keys must be unique—setting existing key overwrites the value
+- Dictionaries optimize for fast retrieval—instant lookup even with 100,000 items
+- More convenient than arrays when you need meaningful access (`user["country"]` vs remembering "index 7")
+- Use dictionaries when you need to look up data by meaningful identifiers
 
-- **Arrays:** Sequential by index (0, 1, 2...)
-- **Dictionaries:** Meaningful keys you choose
-
-Dictionaries are more convenient (`user["country"]` vs remembering "index 7") and optimize for fast retrieval—instant even with 100,000 items.
-
-**Caveat:** Keys might not exist, so you get optionals.
-
-### Optional: Why Does Swift Have Default Values for Dictionaries?
-
-Reading from dictionaries might return nil if keys don't exist. Default values provide backups:
-
-```swift
-let results = ["english": 100, "french": 85, "geography": 75]
-let historyResult = results["history", default: 0]  // returns 0
-```
-
-**When to use:**
+**When to use default values:**
 
 - Missing value = failure/zero → use default (always get a value)
 - Missing value = hasn't happened yet → don't use default (check for nil)
 
 ---
 
-## 3. How to Use Sets for Fast Data Lookup
+## Sets
 
-**Sets** are like arrays but:
-
-- Can't add duplicates
-- Don't store items in order
+Sets are like arrays but don't allow duplicates and don't store items in order.
 
 ### Creating Sets
 
 ```swift
 let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
-print(people)  // order might differ
+print(people)  // order might differ each time
 ```
 
 Create an array first, then put it into the set. Set removes duplicates and doesn't maintain order.
@@ -336,13 +280,16 @@ people.insert("Tom Cruise")
 
 ### Why Use Sets?
 
-**1. No duplicates** Perfect for uniqueness (like Screen Actors Guild requiring unique stage names).
+**1. No duplicates:** Perfect for uniqueness requirements (like Screen Actors Guild requiring unique stage names).
 
-**2. Extremely fast lookups**
+**2. Extremely fast lookups:**
 
-Example: Checking if array contains "The Dark Knight":
+```swift
+let actors = Set(["Denzel Washington", "Tom Cruise", /* ...998 more */ ])
+print(actors.contains("Tom Cruise"))  // Returns instantly
+```
 
-- Array of 1,000: might check all 1,000
+- Array of 1,000: might check all 1,000 items
 - Set of 1,000,000: returns instantly
 
 Even with 10 million items, `contains()` on sets runs instantly.
@@ -352,46 +299,44 @@ Even with 10 million items, `contains()` on sets runs instantly.
 ```swift
 people.contains("Tom Cruise")  // extremely fast
 people.count
-people.sorted()  // returns sorted array
+people.sorted()  // returns sorted array (not set)
 ```
 
 ### Common Mistakes
 
 ```swift
-// WRONG: Using append()
+// ❌ Using append()
 var names = Set<String>()
 names.append("John")  // Error
 
-// CORRECT:
+// ✅ Use insert()
 names.insert("John")
 
-// Sets ignore duplicates
+// Sets automatically remove duplicates
 var numbers = Set([1, 2, 2, 3, 3, 3])
 print(numbers)  // {1, 2, 3}
 
-// WRONG: Expecting indices
+// ❌ Expecting indices
 let set = Set(["A", "B", "C"])
 print(set[0])  // Error: sets don't have indices
 ```
 
-**Key Takeaway:** Sets store unique, unordered items with extremely fast lookups. Use `insert()` to add. Perfect for "does this exist?" questions or when duplicates aren't allowed.
+**Key Insights:**
 
-### Optional: Why Are Sets Different from Arrays in Swift?
-
-- **Sets:** Unordered, no duplicates
-- **Arrays:** Ordered, allows duplicates
-
-Sets optimize for fast retrieval. Checking "does this exist?" returns instantly regardless of size.
-
-Arrays must check items sequentially—potentially all 10,000 items.
-
-**Use sets for:** Checking existence, ensuring uniqueness, fast lookups **Use arrays for:** Order matters, duplicates needed, most cases
+- Sets store unique, unordered items
+- Extremely fast lookups—instant even with millions of items
+- Use `insert()` to add items (not `append()`)
+- Automatically remove duplicates when created
+- Perfect for "does this exist?" questions or when duplicates aren't allowed
+- No index access—items are unordered
+- Use arrays when order matters or duplicates are needed
+- Use sets when you need fast existence checks or automatic uniqueness
 
 ---
 
-## 4. How to Create and Use Enums
+## Enums
 
-An **enum** (enumeration) is a set of named values. More efficient and safer than strings.
+An **enum** (enumeration) is a set of named values you define. More efficient and safer than strings.
 
 ### The Problem with Strings
 
@@ -420,11 +365,11 @@ var day = Weekday.monday
 day = Weekday.tuesday
 ```
 
-Swift won't let you use invalid values. When you type `Weekday.`, Swift shows all options.
+Swift won't let you use invalid values. When you type `Weekday.`, Swift shows all available options.
 
 ### Enum Shortcuts
 
-**Skip enum name after first assignment:**
+Skip enum name after first assignment:
 
 ```swift
 var day = Weekday.monday
@@ -437,95 +382,44 @@ day = .friday
 ### Common Mistakes
 
 ```swift
-// WRONG: Invalid case
+// ❌ Invalid case
 var day = Weekday.monday
-day = Weekday.saturday  // Error: doesn't exist
+day = Weekday.saturday  // Error: case doesn't exist
 
-// WRONG: Mixing types
+// ❌ Mixing types
 var day = Weekday.monday
-day = "Tuesday"  // Error: can't assign String
+day = "Tuesday"  // Error: can't assign String to Weekday
 
-// Enums are type-safe
+// ❌ Mixing different enums
 enum Direction {
     case north, south, east, west
 }
 var heading = Direction.north
-heading = Weekday.monday  // Error: can't mix types
+heading = Weekday.monday  // Error: can't mix enum types
 ```
 
-**Key Takeaway:** Enums define valid values for a type. Prevent typos and invalid data. More efficient than strings. Use shorthand after first assignment. Swift enforces only valid cases.
+**Key Insights:**
 
-### Optional: Why Does Swift Need Enums?
-
-Enums give meaningful names to values:
-
-```swift
-// Without enums:
-let direction = 1  // What does 1 mean?
-
-// With enums:
-enum Direction {
-    case north, south, east, west
-}
-let heading = Direction.north  // Clear and safe
-```
-
-**Benefits:** Clear names, Swift refuses invalid cases, stored as integers (fast), more powerful in Swift than other languages.
+- Enums define a specific set of valid values for a type
+- Prevent typos and invalid data—Swift enforces only defined cases
+- More efficient than strings (stored as integers internally)
+- Use shorthand notation after first assignment (`.monday` instead of `Weekday.monday`)
+- Type-safe: can't mix different enum types or use strings
+- Give meaningful names to values (clearer than magic numbers like `1`, `2`, `3`)
+- More powerful in Swift than in many other languages
+- Use enums when you have a known, fixed set of related values
 
 ---
 
-## Summary: Complex Data Types
+## Choosing the Right Collection Type
 
-**Arrays**
+- **Arrays**: Need order and allow duplicates → Most common use case
+- **Dictionaries**: Need meaningful keys for lookup → Second most common
+- **Sets**: Need fast lookups and guaranteed uniqueness → Less common but powerful when needed
+- **Enums**: Need specific, fixed set of named values → For type-safe constants
 
-- Ordered collections of same type
-- Access by index (starts at 0)
-- Methods: `append()`, `remove(at:)`, `contains()`, `sorted()`, `count`
-- Create empty: `var scores = [Int]()`
-- Type-safe: one type only
-
-**Dictionaries**
-
-- Key-value pairs with meaningful keys
-- Reading keys returns optionals
-- Use `default:` for fallback values
-- Create empty: `var heights = [String: Int]()`
-- Keys unique—setting existing key overwrites
-- Fast retrieval regardless of size
-
-**Sets**
-
-- Unique, unordered items
-- Extremely fast lookups
-- Use `insert()` to add
-- Automatically remove duplicates
-- Create: `Set(["Name1", "Name2"])` or `Set<String>()`
-- Perfect for "does this exist?"
-
-**Enums**
-
-- Define valid named values
-- Prevent typos and invalid data
-- More efficient than strings
-- Use shorthand: `.monday` instead of `Weekday.monday`
-- Type-safe: only defined cases
-- Stored as integers
-
-**Choose the right type:**
-
-- Order and duplicates? → **Array**
-- Meaningful keys? → **Dictionary**
-- Fast lookups and uniqueness? → **Set**
-- Specific valid values? → **Enum**
+**Usage frequency:** Arrays (most) → Dictionaries → Sets → Enums
 
 ---
 
-## Where Now?
-
-You've finished day three, and you're starting to write useful Swift code – make sure to tell the world about your progress!
-
-**Tomorrow:** You'll continue with more complex data types, learning about type annotations and how to be more explicit about the data your code uses.
-
----
-
-**Previous:** [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md) | **Next:** [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md)
+**Topics:** [Arrays](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-ordered-data-in-arrays) • [Dictionaries](https://www.hackingwithswift.com/quick-start/beginners/how-to-store-and-find-data-in-dictionaries) • [Sets](https://www.hackingwithswift.com/quick-start/beginners/how-to-use-sets-for-fast-data-lookup) • [Enums](https://www.hackingwithswift.com/quick-start/beginners/how-to-create-and-use-enums)

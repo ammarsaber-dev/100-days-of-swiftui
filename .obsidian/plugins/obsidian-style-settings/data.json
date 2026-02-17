@@ -8,12 +8,18 @@
   "obsidian-prism-theme@@highlight-text-accent-dt": "pt-highlight-text-accent-dt",
   "obsidian-prism-theme@@pt-focused-mode": true,
   "obsidian-prism-theme@@pt-icon-folder-accent": true,
-  "obsidian-prism-theme@@pt-icons-accent": false,
+  "obsidian-prism-theme@@pt-icons-accent": true,
   "obsidian-prism-theme@@pt-alternative-checkboxes-color-background": false,
   "obsidian-prism-theme@@pt-alternative-checkboxes-color-text": false,
   "obsidian-prism-theme@@enable-alternative-checkboxes": false,
   "obsidian-prism-theme@@pt-alternative-checkboxes-color-icon": false,
   "obsidian-prism-theme@@pt-custom-vault-banner": false,
   "obsidian-prism-theme@@fade-away-opacity": 0.25,
-  "obsidian-prism-theme@@fade-away-delay": 0
+  "obsidian-prism-theme@@fade-away-delay": 0,
+  "obsidian-prism-theme@@file-line-width": 900,
+  "obsidian-prism-theme@@pt-colored-folders-style": "pt-colored-folders-style-accent",
+  "obsidian-prism-theme@@radius-m": 8,
+  "obsidian-prism-theme@@radius-s": 4,
+  "obsidian-prism-theme@@pt-status-bar-style": "pt-status-bar-position-hidden",
+  "obsidian-prism-theme@@pt-file-explorer-folder-icon": true
 }

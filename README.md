@@ -8,3 +8,4 @@ My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 - [Day 3 - Complex data types, part 1](Day%203%20-%20Complex%20data%20types,%20part%201.md)
 - [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md)
 - [Day 5 - Conditions](Day%205%20-%20Conditions.md)
+- [Day 6 - Loops](Day%206%20-%20Loops.md)
