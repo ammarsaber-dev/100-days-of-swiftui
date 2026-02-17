@@ -1,4 +1,4 @@
-**February 15, 2026** • [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md) ← → [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md)
+**February 16, 2026** • [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md) ← → [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md)
 
 Learn about arrays, dictionaries, sets, and enums—ways to group multiple pieces of data together.
 
