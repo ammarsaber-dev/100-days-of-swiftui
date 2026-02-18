@@ -11,3 +11,4 @@ My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 - [Day 6 - Loops](Day%206%20-%20Loops.md)
 - [Day 7 - Functions, part one](Day%207%20-%20Functions,%20part%20one.md)
 - [Day 8 - Functions, part two](Day%208%20-%20Functions,%20part%20two.md)
+- [Day 9 - Closures](Day%209%20-%20Closures.md)
