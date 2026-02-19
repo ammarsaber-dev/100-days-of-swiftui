@@ -187,51 +187,6 @@ String interpolation inserts dynamic data at runtime, essential for showing user
 
 ---
 
-## Summary: Simple Data Types
-
-**Constants and Variables**
-
-- Use `let` for constants, `var` for variables
-- Prefer `let` to prevent accidental changes and help Swift optimize your code
-
-**Strings**
-
-- Double quotes for single lines, triple quotes for multi-line
-- Methods: `.count`, `.uppercased()`, `.hasPrefix()`, `.hasSuffix()`
-- Join with `+` or string interpolation `\(variable)` (prefer interpolation)
-
-**Integers**
-
-- Whole numbers with operators: `+`, `-`, `*`, `/`, `+=`, `-=`, `*=`, `/=`
-- Methods: `.isMultiple(of:)`
-- Use underscores for readability: `100_000_000`
-
-**Doubles**
-
-- Decimal numbers (double-precision floating-point)
-- Not perfectly precise due to how computers store decimals
-- Can't mix with Int without explicit conversion
-
-**Booleans**
-
-- Store `true` or `false`
-- Flip with `!` operator (creates new value) or `.toggle()` method (modifies in place)
-- Used for conditions, flags, and state tracking
-
-**String Interpolation**
-
-- Insert values into strings: `\(variable)`
-- Automatic type conversion
-- More efficient than `+` for building strings
-
-**Type Safety**
-
-- Swift determines type based on initial value
-- Type can't change once set
-- Must convert between types explicitly
-
----
-
 ## Checkpoint 1
 
 Time to write your first real program from scratch. No copying and pasting, no following line-by-line instructions—just you and the skills you've learned.
