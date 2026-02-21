@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 000 - How to become an iOS developer.md",
+                "file": "Day 010 - Structs, part one.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 000 - How to become an iOS developer"
+              "title": "Day 010 - Structs, part one"
             }
           }
         ]
@@ -185,18 +185,19 @@
   },
   "active": "a5d2c1b110dbb1d4",
   "lastOpenFiles": [
-    "Day 010 - Structs, part one.md",
     "Day 011 - Structs, part two.md",
+    "README.md",
+    "Day 002 - Simple data types, part 2.md",
+    "Day 001 - First steps in Swift.md",
+    "Day 000 - How to become an iOS developer.md",
+    "Day 0 - How to become an iOS developer.md",
+    "Day 010 - Structs, part one.md",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
     "Day 007 - Functions, part one.md",
     "Day 006 - Loops.md",
     "Day 005 - Conditions.md",
     "Day 004 - Complex data types, part 2.md",
-    "Day 003 - Complex data types, part 1.md",
-    "Day 002 - Simple data types, part 2.md",
-    "Day 0 - How to become an iOS developer.md",
-    "Day 001 - First steps in Swift.md",
-    "README.md"
+    "Day 003 - Complex data types, part 1.md"
   ]
 }

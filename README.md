@@ -2,7 +2,7 @@
 My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 
 # Days Notes
-- [Day 0 - How to become an iOS developer](Day%200%20-%20How%20to%20become%20an%20iOS%20developer.md)
+- [Day 000 - How to become an iOS developer](Day%20000%20-%20How%20to%20become%20an%20iOS%20developer.md)
 - [Day 001 - First steps in Swift](Day%20001%20-%20First%20steps%20in%20Swift.md)
 - [Day 002 - Simple data types, part 2](Day%20002%20-%20Simple%20data%20types,%20part%202.md)
 - [Day 003 - Complex data types, part 1](Day%20003%20-%20Complex%20data%20types,%20part%201.md)
