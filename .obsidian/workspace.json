@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 010 - Structs, part one.md",
+                "file": "Day 000 - How to become an iOS developer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 010 - Structs, part one"
+              "title": "Day 000 - How to become an iOS developer"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "a5d2c1b110dbb1d4",
   "lastOpenFiles": [
-    "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
+    "Day 011 - Structs, part two.md",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
     "Day 007 - Functions, part one.md",
