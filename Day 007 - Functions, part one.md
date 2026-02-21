@@ -1,4 +1,4 @@
-**February 17, 2026** •[Day 6 - Loops](Day%206%20-%20Loops.md) ← → [Day 8 - Functions, part two](Day%208%20-%20Functions,%20part%20two.md)
+**February 17, 2026** •[Day 006 - Loops](Day%20006%20-%20Loops.md) ← → [Day 008 - Functions, part two](Day%20008%20-%20Functions,%20part%20two.md)
 
 Functions let you wrap up pieces of code, give them a name, and reuse them anywhere. Rather than copying and pasting the same 10 lines in a dozen places, you write it once and call it wherever you need it. Change the function later, and every place that uses it gets updated automatically.
 

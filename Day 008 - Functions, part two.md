@@ -1,4 +1,4 @@
-**February 18, 2026** • [Day 7 - Functions, part one](Day%207%20-%20Functions,%20part%20one.md) ← → [Day 9 - Closures](Day%209%20-%20Closures.md)
+**February 18, 2026** • [Day 007 - Functions, part one](Day%20007%20-%20Functions,%20part%20one.md) ← → [Day 009 - Closures](Day%20009%20-%20Closures.md)
 
 No one wants things to go wrong, but they do — files don't exist, networks go down, passwords are too short. Swift makes you handle errors rather than ignore them, so your code is forced to be prepared. If you don't at least acknowledge that errors might happen, your code simply won't compile.
 

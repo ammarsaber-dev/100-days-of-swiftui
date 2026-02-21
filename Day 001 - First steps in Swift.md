@@ -1,4 +1,4 @@
-**February 15, 2026** • [Day 0 - How to become an iOS developer](Day%200%20-%20How%20to%20become%20an%20iOS%20developer.md) ← → [Day 2 - Simple data types, part 2](Day%202%20-%20Simple%20data%20types,%20part%202.md)
+**February 15, 2026** • [Day 0 - How to become an iOS developer](Day%200%20-%20How%20to%20become%20an%20iOS%20developer.md) ← → [Day 002 - Simple data types, part 2](Day%20002%20-%20Simple%20data%20types,%20part%202.md)
 
 Your first day covers the fundamentals—variables, constants, strings, integers, and doubles. These are the building blocks of every app you'll ever write.
 

@@ -1,4 +1,4 @@
-**February 17, 2026** • [Day 5 - Conditions](Day%205%20-%20Conditions.md) ← → [Day 7 - Functions, part one](Day%207%20-%20Functions,%20part%20one.md)
+**February 17, 2026** • [Day 005 - Conditions](Day%20005%20-%20Conditions.md) ← → [Day 007 - Functions, part one](Day%20007%20-%20Functions,%20part%20one.md)
 
 Loops are one of the things that make computers so powerful — the ability to repeat work billions of times a second. Swift gives you two kinds: `for` loops when you know what you're iterating over, and `while` loops when you don't know how many times you'll need to go around.
 

@@ -1,4 +1,4 @@
-**February 14, 2026** • → [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md)
+**February 14, 2026** • → [Day 001 - First steps in Swift](Day%20001%20-%20First%20steps%20in%20Swift.md)
 
 A complete roadmap for becoming an iOS developer: the essential skills you need, common mistakes to avoid, the best free resources, and how to connect with the community.
 

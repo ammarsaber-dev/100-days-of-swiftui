@@ -2,5 +2,7 @@
   "useMarkdownLinks": true,
   "newFileLocation": "root",
   "attachmentFolderPath": "_attachments",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true
 }

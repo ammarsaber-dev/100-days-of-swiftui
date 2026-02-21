@@ -1,4 +1,4 @@
-**February 17, 2026** • [Day 4 - Complex data types, part 2](Day%204%20-%20Complex%20data%20types,%20part%202.md) ← → [Day 6 - Loops](Day%206%20-%20Loops.md)
+**February 17, 2026** • [Day 004 - Complex data types, part 2](Day%20004%20-%20Complex%20data%20types,%20part%202.md) ← → [Day 006 - Loops](Day%20006%20-%20Loops.md)
 
 Learn how to make decisions in code: `if`, `else`, `switch`, and the ternary operator.
 

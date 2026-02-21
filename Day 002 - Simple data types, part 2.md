@@ -1,4 +1,4 @@
-**February 15, 2026** • [Day 1 - First steps in Swift](Day%201%20-%20First%20steps%20in%20Swift.md) ← → [Day 3 - Complex data types, part 1](Day%203%20-%20Complex%20data%20types,%20part%201.md)
+**February 15, 2026** • [Day 001 - First steps in Swift](Day%20001%20-%20First%20steps%20in%20Swift.md) ← → [Day 003 - Complex data types, part 1](Day%20003%20-%20Complex%20data%20types,%20part%201.md)
 
 Learn about Booleans (true/false values) and string interpolation (building strings with dynamic data). Plus Checkpoint 1 where you'll write real code from scratch.
 

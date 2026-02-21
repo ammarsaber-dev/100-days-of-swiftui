@@ -1,4 +1,4 @@
-**February 16, 2026** • [Day 3 - Complex data types, part 1](Day%203%20-%20Complex%20data%20types,%20part%201.md) ← → [Day 5 - Conditions](Day%205%20-%20Conditions.md)
+**February 16, 2026** • [Day 003 - Complex data types, part 1](Day%20003%20-%20Complex%20data%20types,%20part%201.md) ← → [Day 005 - Conditions](Day%20005%20-%20Conditions.md)
 
 Learn about type annotations—Swift's way of letting you explicitly declare what type each variable holds. Then review complex data types and complete Checkpoint 2.
 

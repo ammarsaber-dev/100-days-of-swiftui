@@ -1,4 +1,4 @@
- **February 18, 2026** • [Day 8 - Functions, part two](Day%208%20-%20Functions,%20part%20two.md) ← → [Day 10 - Structs, part one](Day%2010%20-%20Structs,%20part%20one.md)
+ **February 19, 2026** • [Day 008 - Functions, part two](Day%20008%20-%20Functions,%20part%20two.md) ← → [Day 010 - Structs, part one](Day%20010%20-%20Structs,%20part%20one.md)
 
 Closures are one of the most powerful — and most confusing — features of Swift. They're like anonymous functions you can store in variables and pass around. Once you've climbed this hill, the rest gets much easier. SwiftUI uses them everywhere, so it's worth taking the time to understand them well.
 
