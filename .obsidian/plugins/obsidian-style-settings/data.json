@@ -32,5 +32,19 @@
   "baseline-style@@tab-full-width": false,
   "baseline-style@@readable-spacing": false,
   "baseline-style@@block-width-off": false,
-  "baseline-style@@line-width": "900px"
+  "baseline-style@@line-width": "900px",
+  "underwater-theme@@underwater-colors-dark": "catppuccin-mocha",
+  "o-theme-settings@@o-color-accent": "o-custom",
+  "o-theme-settings@@o-theme-dark": "o-lyt-dt",
+  "o-theme-settings@@o-list-distinct": false,
+  "obsidian-velocity@@enable-special-text": true,
+  "obsidian-velocity@@enable-special-code": true,
+  "obsidian-velocity@@file-line-width": 46,
+  "obsidian-velocity@@line-height-normal": "1.6",
+  "obsidian-velocity@@theme-paint-dark": "velocity-gray",
+  "obsidian-velocity@@override-default-font": false,
+  "obsidian-velocity-config@@hide-bases-header": false,
+  "obsidian-velocity-config@@enable-dim-img": false,
+  "obsidian-velocity-config@@improve-pinned-tabs": false,
+  "obsidian-velocity-config@@disable-corner-smoothing": false
 }
