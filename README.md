@@ -1,4 +1,3 @@
-# 100 Days of SwiftUI
 My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 
 # Days Notes
@@ -14,3 +13,5 @@ My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 - [Day 009 - Closures](Day%20009%20-%20Closures.md)
 - [Day 010 - Structs, part one](Day%20010%20-%20Structs,%20part%20one.md)
 - [Day 011 - Structs, part two](Day%20011%20-%20Structs,%20part%20two.md)
+- [Day 012 - Classes](Day%20012%20-%20Classes.md)
+- [Day 013 - Protocols and extensions](Day%20013%20-%20Protocols%20and%20extensions.md)

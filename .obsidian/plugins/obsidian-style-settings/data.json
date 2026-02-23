@@ -39,7 +39,7 @@
   "o-theme-settings@@o-list-distinct": false,
   "obsidian-velocity@@enable-special-text": true,
   "obsidian-velocity@@enable-special-code": true,
-  "obsidian-velocity@@file-line-width": 46,
+  "obsidian-velocity@@file-line-width": 47.5,
   "obsidian-velocity@@line-height-normal": "1.6",
   "obsidian-velocity@@theme-paint-dark": "velocity-gray",
   "obsidian-velocity@@override-default-font": false,

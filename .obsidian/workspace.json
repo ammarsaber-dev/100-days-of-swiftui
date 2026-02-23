@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9ff19736c59adcc8",
+        "id": "12c380e0dc0a370d",
         "type": "tabs",
         "children": [
           {
-            "id": "a5d2c1b110dbb1d4",
+            "id": "a808e4110757fd4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 011 - Structs, part two.md",
+                "file": "Day 013 - Protocols and extensions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 011 - Structs, part two"
+              "title": "Day 013 - Protocols and extensions"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5,
-    "collapsed": true
+    "width": 285.5
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -184,10 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "a5d2c1b110dbb1d4",
+  "active": "a808e4110757fd4c",
   "lastOpenFiles": [
     "Day 012 - Classes.md",
     "Day 011 - Structs, part two.md",
+    "Untitled",
+    "Day 013 - Protocols and extensions.md",
+    "README.md",
     "Day 010 - Structs, part one.md",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
@@ -199,7 +201,6 @@
     "Day 002 - Simple data types, part 2.md",
     "Day 001 - First steps in Swift.md",
     "Day 000 - How to become an iOS developer.md",
-    "README.md",
     "Day 0 - How to become an iOS developer.md"
   ]
 }
