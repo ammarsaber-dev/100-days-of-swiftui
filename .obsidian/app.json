@@ -4,5 +4,6 @@
   "attachmentFolderPath": "_attachments",
   "showUnsupportedFiles": false,
   "readableLineLength": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "tabSize": 4
 }

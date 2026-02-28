@@ -1,6 +1,4 @@
 {
-  "cupertino@@dynamic-type-off": false,
-  "cupertino@@font-ui-modifier": 0,
   "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-raven-dt",
   "obsidian-prism-theme@@color-scheme-style-dt": "pt-color-scheme-style-border-dt",
   "obsidian-prism-theme@@accent-style-dt": "pt-accent-style-filled-dt",
@@ -39,12 +37,15 @@
   "o-theme-settings@@o-list-distinct": false,
   "obsidian-velocity@@enable-special-text": true,
   "obsidian-velocity@@enable-special-code": true,
-  "obsidian-velocity@@file-line-width": 47.5,
   "obsidian-velocity@@line-height-normal": "1.6",
   "obsidian-velocity@@theme-paint-dark": "velocity-gray",
   "obsidian-velocity@@override-default-font": false,
   "obsidian-velocity-config@@hide-bases-header": false,
   "obsidian-velocity-config@@enable-dim-img": false,
   "obsidian-velocity-config@@improve-pinned-tabs": false,
-  "obsidian-velocity-config@@disable-corner-smoothing": false
+  "obsidian-velocity-config@@disable-corner-smoothing": false,
+  "obsidian-velocity@@file-line-width": 47.5,
+  "cupertino@@tab-floating": false,
+  "cupertino@@hover-ribbon": false,
+  "cupertino@@hover-sidedock": true
 }
