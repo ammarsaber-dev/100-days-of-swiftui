@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 014 - Optionals.md",
+                "file": "Day 015 - Swift review.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 014 - Optionals"
+              "title": "Day 015 - Swift review"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4921875,
-    "collapsed": true
+    "width": 385.4921875
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -186,8 +185,9 @@
   },
   "active": "0180274289c0ec9e",
   "lastOpenFiles": [
-    "Day 015 - Swift review.md",
     "Day 014 - Optionals.md",
+    "Day 015 - Swift review.md",
+    "Day 016 - Project 1, part one.md",
     "Day 013 - Protocols and extensions.md",
     "Day 012 - Classes.md",
     "Day 011 - Structs, part two.md",
