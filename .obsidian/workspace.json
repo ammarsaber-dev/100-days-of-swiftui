@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c41cbc96d836d09b",
+            "id": "0180274289c0ec9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 013 - Protocols and extensions.md",
+                "file": "Day 014 - Optionals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 013 - Protocols and extensions"
+              "title": "Day 014 - Optionals"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 013 - Protocols and extensions.md",
+                "file": "Day 014 - Optionals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 013 - Protocols and extensions"
+              "title": "Backlinks for Day 014 - Optionals"
             }
           },
           {
@@ -184,14 +184,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "c41cbc96d836d09b",
+  "active": "0180274289c0ec9e",
   "lastOpenFiles": [
+    "Day 015 - Swift review.md",
     "Day 014 - Optionals.md",
     "Day 013 - Protocols and extensions.md",
     "Day 012 - Classes.md",
+    "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
     "README.md",
-    "Day 011 - Structs, part two.md",
     "Untitled",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
