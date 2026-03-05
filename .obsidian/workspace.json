@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 015 - Swift review.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 015 - Swift review"
+              "title": "README"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "0180274289c0ec9e",
   "lastOpenFiles": [
-    "Day 014 - Optionals.md",
     "Day 015 - Swift review.md",
+    "Day 014 - Optionals.md",
     "Day 016 - Project 1, part one.md",
     "Day 013 - Protocols and extensions.md",
     "Day 012 - Classes.md",
