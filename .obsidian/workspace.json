@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Day 016 - Project 1, part one.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Day 016 - Project 1, part one"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4921875
+    "width": 326.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -185,14 +186,15 @@
   },
   "active": "0180274289c0ec9e",
   "lastOpenFiles": [
-    "Day 015 - Swift review.md",
-    "Day 014 - Optionals.md",
-    "Day 016 - Project 1, part one.md",
-    "Day 013 - Protocols and extensions.md",
-    "Day 012 - Classes.md",
     "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
+    "Day 013 - Protocols and extensions.md",
+    "Day 016 - Project 1, part one.md",
+    "Day 017 - Project 1, part two.md",
     "README.md",
+    "Day 015 - Swift review.md",
+    "Day 014 - Optionals.md",
+    "Day 012 - Classes.md",
     "Untitled",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
