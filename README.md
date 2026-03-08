@@ -19,3 +19,4 @@ My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 - [Day 015 - Swift review](Day%20015%20-%20Swift%20review.md)
 - [Day 016 - Project 1, part one](Day%20016%20-%20Project%201,%20part%20one.md)
 - [Day 017 - Project 1, part two](Day%20017%20-%20Project%201,%20part%20two.md)
+- [Day 018 - Project 1, part three](Day%20018%20-%20Project%201,%20part%20three.md)

@@ -1,4 +1,4 @@
-**March 03, 2026** • [Day 015 - Swift Review](Day%20015%20-%20Swift%20review.md) ← → [Day 017 - Project 1, part two](Day%20017%20-%20Project%201,%20part%20two.md)
+**March 06, 2026** • [Day 015 - Swift Review](Day%20015%20-%20Swift%20review.md) ← → [Day 017 - Project 1, part two](Day%20017%20-%20Project%201,%20part%20two.md)
 
 We're building **WeSplit** — a check-splitting app that calculates how much each person pays based on the bill, tip, and number of people. This project isn't complicated; its real purpose is to teach the basics of SwiftUI in a practical way.
 

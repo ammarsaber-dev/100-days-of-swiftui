@@ -77,7 +77,6 @@
   "Components@@folder-font-bold": false,
   "Editor@@focus-indicator-list-level": true,
   "Editor@@focus-indicator-codeblock-line-number": true,
-  "Editor@@codeblock-style-select": "codeblock-style-dracula",
   "Editor@@border-focus-mode": false,
   "Editor@@line-normal-opacity": 0.5,
   "Editor@@editor-grid-background-pattren": true,
