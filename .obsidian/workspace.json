@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5026054382324,
+    "width": 330.4986982345581,
     "collapsed": true
   },
   "right": {
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 014 - Optionals.md",
+                "file": "Day 017 - Project 1, part two.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 014 - Optionals"
+              "title": "Backlinks for Day 017 - Project 1, part two"
             }
           },
           {
@@ -201,14 +201,14 @@
   },
   "active": "e226441e1e2af89b",
   "lastOpenFiles": [
-    "Day 016 - Project 1, part one.md",
-    "Day 017 - Project 1, part two.md",
     "Day 018 - Project 1, part three.md",
+    "Day 017 - Project 1, part two.md",
+    "Day 016 - Project 1, part one.md",
+    "Day 015 - Swift review.md",
     "README.md",
     "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
     "Day 013 - Protocols and extensions.md",
-    "Day 015 - Swift review.md",
     "Day 014 - Optionals.md",
     "Day 012 - Classes.md",
     "Untitled",
