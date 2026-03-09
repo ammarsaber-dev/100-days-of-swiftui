@@ -1,6 +1,7 @@
-My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
+My notes (heavily created by AI) for 100 Days of SwiftUI course.
 
 # Days Notes
+
 - [Day 000 - How to become an iOS developer](Day%20000%20-%20How%20to%20become%20an%20iOS%20developer.md)
 - [Day 001 - First steps in Swift](Day%20001%20-%20First%20steps%20in%20Swift.md)
 - [Day 002 - Simple data types, part 2](Day%20002%20-%20Simple%20data%20types,%20part%202.md)
@@ -20,3 +21,5 @@ My notes (Heavily Created by AI) for 100 Days of SwiftUI course.
 - [Day 016 - Project 1, part one](Day%20016%20-%20Project%201,%20part%20one.md)
 - [Day 017 - Project 1, part two](Day%20017%20-%20Project%201,%20part%20two.md)
 - [Day 018 - Project 1, part three](Day%20018%20-%20Project%201,%20part%20three.md)
+- [Day 019 - Challenge day](Day%20019%20-%20Challenge%20day.md)
+- [Day 020 - Project 2, part 1](Day%20020%20-%20Project%202,%20part%201.md)
