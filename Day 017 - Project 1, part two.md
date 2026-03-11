@@ -1,4 +1,4 @@
-**March 08, 2026** • [Day 016 - Project 1, part one](Day%20016%20-%20Project%201%2C%20part%20one.md) ← → [Day 018 - Project 1, part three](Day%20018%20-%20Project%201,%20part%20three.md)
+**March 07, 2026** • [Day 016 - Project 1, part one](Day%20016%20-%20Project%201%2C%20part%20one.md) ← → [Day 018 - Project 1, part three](Day%20018%20-%20Project%201,%20part%20three.md)
 
 Today we turn theory into practice by building the WeSplit app. As Immanuel Kant said: "experience without theory is blind, but theory without experience is mere intellectual play." Everything from yesterday applies here — there are no surprises, just seeing how the pieces fit together.
 

@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Day 020 - Project 2, part 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Day 020 - Project 2, part 1"
+            }
+          },
+          {
+            "id": "56fbfee104129868",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Day 021 - Project 2, part 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Day 021 - Project 2, part 2"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -107,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.4986982345581,
-    "collapsed": true
+    "width": 330.4986982345581
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -124,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Day 021 - Project 2, part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Day 021 - Project 2, part 2"
             }
           },
           {
@@ -213,17 +226,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "d38a46cf63fa7771",
+  "active": "56fbfee104129868",
   "lastOpenFiles": [
-    "Day 019 - Challenge day.md",
     "Day 020 - Project 2, part 1.md",
+    "Day 019 - Challenge day.md",
     "Day 018 - Project 1, part three.md",
-    "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
-    "_attachments",
     "Day 017 - Project 1, part two.md",
     "Day 016 - Project 1, part one.md",
     "Day 015 - Swift review.md",
+    "Day 021 - Project 2, part 2.md",
     "README.md",
+    "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
+    "_attachments",
     "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
     "Day 013 - Protocols and extensions.md",

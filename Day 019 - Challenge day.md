@@ -1,4 +1,4 @@
-**March 08, 2026** • [Day 018 - Project 1, part three](Day%20018%20-%20Project%201%2C%20part%20three.md) ← → [Day 020 - Project 2, part 1](Day%20020%20-%20Project%202,%20part%201.md)
+**March 09, 2026** • [Day 018 - Project 1, part three](Day%20018%20-%20Project%201%2C%20part%20three.md) ← → [Day 020 - Project 2, part 1](Day%20020%20-%20Project%202,%20part%201.md)
 
 Your first challenge day — build a complete unit converter app from scratch using everything learned in Project 1. No new concepts are introduced; this is purely about solidifying the basics.
 
