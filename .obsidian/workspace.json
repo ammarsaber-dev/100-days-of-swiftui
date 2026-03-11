@@ -13,58 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 018 - Project 1, part three.md",
+                "file": "Day 022 - Project 2, part 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 018 - Project 1, part three"
-            }
-          },
-          {
-            "id": "3d39ea3ae0a28e3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day 019 - Challenge day.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day 019 - Challenge day"
-            }
-          },
-          {
-            "id": "d38a46cf63fa7771",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day 020 - Project 2, part 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day 020 - Project 2, part 1"
-            }
-          },
-          {
-            "id": "56fbfee104129868",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day 021 - Project 2, part 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day 021 - Project 2, part 2"
+              "title": "Day 022 - Project 2, part 3"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 021 - Project 2, part 2.md",
+                "file": "Day 022 - Project 2, part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 021 - Project 2, part 2"
+              "title": "Backlinks for Day 022 - Project 2, part 3"
             }
           },
           {
@@ -226,16 +183,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "56fbfee104129868",
+  "active": "e226441e1e2af89b",
   "lastOpenFiles": [
+    "Day 021 - Project 2, part 2.md",
+    "Day 022 - Project 2, part 3.md",
+    "Day 023 - Project 3 part 1.md",
+    "Day 023 - Project 3%2C part 1.md",
     "Day 020 - Project 2, part 1.md",
-    "Day 019 - Challenge day.md",
     "Day 018 - Project 1, part three.md",
     "Day 017 - Project 1, part two.md",
     "Day 016 - Project 1, part one.md",
-    "Day 015 - Swift review.md",
-    "Day 021 - Project 2, part 2.md",
+    "Day 019 - Challenge day.md",
     "README.md",
+    "Day 015 - Swift review.md",
     "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
     "_attachments",
     "Day 011 - Structs, part two.md",
@@ -253,7 +213,6 @@
     "Day 003 - Complex data types, part 1.md",
     "Day 002 - Simple data types, part 2.md",
     "Day 001 - First steps in Swift.md",
-    "Day 000 - How to become an iOS developer.md",
-    "Day 0 - How to become an iOS developer.md"
+    "Day 000 - How to become an iOS developer.md"
   ]
 }
