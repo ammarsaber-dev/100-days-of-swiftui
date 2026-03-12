@@ -1,4 +1,4 @@
-**March 11, 2026** • [Day 021 - Project 2, part 2](Day%20021%20-%20Project%202,%20part%202.md) ← → [Day 023 - Project 3 part 1](Day%20023%20-%20Project%203%20part%201.md)
+**March 11, 2026** • [Day 021 - Project 2, part 2](Day%20021%20-%20Project%202,%20part%202.md) ← → [Day 023 - Project 3, part 1](Day%20023%20-%20Project%203,%20part%201.md)
 
 You've reached the end of your second SwiftUI project — good job! Time to review what you learned and complete three challenges to make sure it all sticks.
 

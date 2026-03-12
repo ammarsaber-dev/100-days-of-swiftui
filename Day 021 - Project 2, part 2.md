@@ -10,6 +10,7 @@ The app needs two properties to store its game data — an array of countries an
 
 ```swift
 @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
+
 @State private var correctAnswer = Int.random(in: 0...2)
 ```
 

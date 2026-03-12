@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 022 - Project 2, part 3.md",
+                "file": "Day 023 - Project 3, part 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 022 - Project 2, part 3"
+              "title": "Day 023 - Project 3, part 1"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.4986982345581
+    "width": 330.4986982345581,
+    "collapsed": true
   },
   "right": {
     "id": "b86e96a67f50468c",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 022 - Project 2, part 3.md",
+                "file": "Day 023 - Project 3, part 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 022 - Project 2, part 3"
+              "title": "Backlinks for Day 023 - Project 3, part 1"
             }
           },
           {
@@ -185,24 +186,25 @@
   },
   "active": "e226441e1e2af89b",
   "lastOpenFiles": [
-    "Day 021 - Project 2, part 2.md",
+    "Day 024 - Project 3, part 2.md",
+    "Day 023 - Project 3, part 1.md",
     "Day 022 - Project 2, part 3.md",
-    "Day 023 - Project 3 part 1.md",
-    "Day 023 - Project 3%2C part 1.md",
+    "Day 021 - Project 2, part 2.md",
     "Day 020 - Project 2, part 1.md",
+    "Day 019 - Challenge day.md",
     "Day 018 - Project 1, part three.md",
     "Day 017 - Project 1, part two.md",
     "Day 016 - Project 1, part one.md",
-    "Day 019 - Challenge day.md",
-    "README.md",
-    "Day 015 - Swift review.md",
-    "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
-    "_attachments",
-    "Day 011 - Structs, part two.md",
-    "Day 010 - Structs, part one.md",
     "Day 013 - Protocols and extensions.md",
+    "Day 015 - Swift review.md",
+    "README.md",
     "Day 014 - Optionals.md",
     "Day 012 - Classes.md",
+    "Day 011 - Structs, part two.md",
+    "Day 023 - Project 3%2C part 1.md",
+    "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
+    "_attachments",
+    "Day 010 - Structs, part one.md",
     "Untitled",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
@@ -212,7 +214,6 @@
     "Day 004 - Complex data types, part 2.md",
     "Day 003 - Complex data types, part 1.md",
     "Day 002 - Simple data types, part 2.md",
-    "Day 001 - First steps in Swift.md",
-    "Day 000 - How to become an iOS developer.md"
+    "Day 001 - First steps in Swift.md"
   ]
 }

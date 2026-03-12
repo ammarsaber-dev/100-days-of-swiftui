@@ -89,7 +89,7 @@
   "cupertino@@colorful-frame": true,
   "baseline-style@@accented-interface": false,
   "baseline-style@@color-scheme-accent": false,
-  "baseline-style@@element-style": "input-baseline",
+  "baseline-style@@element-style": "input-tactile",
   "baseline-style@@code-line-numbers": false,
   "baseline-style@@code-scroll": false,
   "baseline-style@@bases-block-width": "bases-normal",
@@ -100,5 +100,15 @@
   "baseline-style@@metadata-add-property-off": false,
   "baseline-style@@hover-sidedock": true,
   "baseline-style@@hover-sidedock-active-off": true,
-  "baseline-style@@colorful-folders": "colorful-folders-side"
+  "baseline-style@@layout-style": "layout-macos",
+  "baseline-style@@status-bar-style": "status-bar-baseline",
+  "baseline-style@@tab-left-style": "tab-left-compact",
+  "baseline-style@@nav-item-active-style": "nav-item-strong",
+  "baseline-style@@colorful-folders": "colorful-folders-side",
+  "baseline-style@@translucent-dark-opacity": 50,
+  "baseline-style@@colorful-frame": false,
+  "baseline-style@@file-header-visibility": "view-header-title-always",
+  "baseline-style@@tab-stacked-spine-order": "row",
+  "baseline-style@@tab-style": "tab-floating",
+  "baseline-style@@tab-text-align": "left"
 }
