@@ -1,4 +1,7 @@
 {
-  "cssTheme": "Baseline",
-  "accentColor": ""
+  "cssTheme": "Claude",
+  "accentColor": "",
+  "interfaceFontFamily": "",
+  "baseFontSize": 16,
+  "baseFontSizeAction": false
 }

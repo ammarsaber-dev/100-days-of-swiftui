@@ -1,4 +1,4 @@
-**March 11, 2026** • [Day 019 – Challenge Day](Day%20019%20-%20Challenge%20day.md) ← → [Day 021 - Project 2, part 2](Day%20021%20-%20Project%202,%20part%202.md)
+**March 10, 2026** • [Day 019 – Challenge Day](Day%20019%20-%20Challenge%20day.md) ← → [Day 021 - Project 2, part 2](Day%20021%20-%20Project%202,%20part%202.md)
 
 We're starting **Project 2: Guess the Flag** — a guessing game that teaches players flags of the world. Introduces stacks, colors, gradients, buttons, images, and alerts.
 
@@ -10,11 +10,11 @@ Download assets from GitHub: [https://github.com/twostraws/HackingWithSwift](ht
 
 Three stack types for arranging multiple views:
 
-|Stack|Direction|
-|---|---|
-|`VStack`|Vertical|
-|`HStack`|Horizontal|
-|`ZStack`|Depth (back to front)|
+| Stack    | Direction             |
+| -------- | --------------------- |
+| `VStack` | Vertical              |
+| `HStack` | Horizontal            |
+| `ZStack` | Depth (back to front) |
 
 SwiftUI can infer a `VStack` when you return multiple views loosely, but being explicit lets you control **spacing** and **alignment**:
 
