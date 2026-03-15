@@ -1,4 +1,4 @@
-**March 13, 2026** • [Day 023 - Project 3, part 1](Day%20023%20-%20Project%203,%20part%201.md) ← → [Day 025 - Project 4, part 1](Day%20025%20-%20Project%204,%20part%201.md)
+**March 13, 2026** • [Day 023 - Project 3, part 1](Day%20023%20-%20Project%203,%20part%201.md) ← → [Day 025 - Milestone Projects 1-3](Day%20025%20-%20Milestone%20Projects%201-3.md)
 
 Views and modifiers are the fundamental building blocks of any SwiftUI app. This wrap-up session focuses on solidifying that foundation through three challenges that revisit earlier projects.
 
