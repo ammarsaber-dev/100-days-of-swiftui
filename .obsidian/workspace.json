@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 025 - Milestone Projects 1-3.md",
-                "mode": "source",
+                "file": "Day 026 - Project 4, part 1.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 025 - Milestone Projects 1-3"
+              "title": "Day 026 - Project 4, part 1"
             }
           }
         ]
@@ -186,32 +186,32 @@
   },
   "active": "ab04a9c13db42c81",
   "lastOpenFiles": [
-    "Day 024 - Project 3%2C part 2.md",
-    "Day 025 - Milestone Projects 1-3.md",
-    "Day 026 - Project 4%2C part 1.md",
-    "Day 024 - Project 3, part 2.md",
+    "Day 027 - Project 4, part 2.md",
     "Day 026 - Project 4, part 1.md",
-    "2026-03-14.md",
+    "Day 025 - Milestone Projects 1-3.md",
+    "Day 027 - Project 4%2C part 2.md",
     "Day 023 - Project 3, part 1.md",
-    "Day 022 - Project 2, part 3.md",
-    "Day 016 - Project 1, part one.md",
-    "Day 013 - Protocols and extensions.md",
     "Day 021 - Project 2, part 2.md",
-    "Day 020 - Project 2, part 1.md",
     "Day 019 - Challenge day.md",
-    "Day 018 - Project 1, part three.md",
+    "Day 016 - Project 1, part one.md",
     "Day 017 - Project 1, part two.md",
+    "Day 018 - Project 1, part three.md",
+    "Day 024 - Project 3, part 2.md",
+    "Day 022 - Project 2, part 3.md",
+    "Day 020 - Project 2, part 1.md",
     "Day 015 - Swift review.md",
-    "Day 014 - Optionals.md",
     "Day 012 - Classes.md",
+    "Day 024 - Project 3%2C part 2.md",
+    "Day 026 - Project 4%2C part 1.md",
+    "2026-03-14.md",
+    "Day 013 - Protocols and extensions.md",
+    "Day 014 - Optionals.md",
     "Day 011 - Structs, part two.md",
     "Day 010 - Structs, part one.md",
     "Day 009 - Closures.md",
     "Day 008 - Functions, part two.md",
     "Day 007 - Functions, part one.md",
     "Day 006 - Loops.md",
-    "Day 005 - Conditions.md",
-    "Day 004 - Complex data types, part 2.md",
     "_attachments/Screenshot 2026-03-08 at 9.49.45 PM.png",
     "_attachments",
     "Untitled"
