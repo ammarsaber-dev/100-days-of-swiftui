@@ -28,3 +28,5 @@ My notes (heavily created by AI) for 100 Days of SwiftUI course.
 - [Day 023 - Project 3, part 1](Day%20023%20-%20Project%203,%20part%201.md)
 - [Day 024 - Project 3, part 2](Day%20024%20-%20Project%203,%20part%202.md)
 - [Day 025 - Milestone Projects 1-3](Day%20025%20-%20Milestone%20Projects%201-3.md)
+- [Day 026 - Project 4, part 1](Day%20026%20-%20Project%204,%20part%201.md)
+- [Day 027 - Project 4, part 2](Day%20027%20-%20Project%204,%20part%202.md)
